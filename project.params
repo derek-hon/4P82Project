@@ -1,0 +1,37 @@
+parent.0 = ../../gp/koza/koza.params
+
+pop.subpop.0.species.ind.numtrees = 2
+
+#Result producing tree
+pop.subpop.0.species.ind.tree.0 = ec.gp.GPTree
+pop.subpop.0.species.ind.tree.0.tc = tc0
+
+#ADF tree
+pop.subpop.0.species.ind.tree.1 = ec.gp.GPTree
+pop.subpop.0.species.ind.tree.1.tc = tc1
+
+gp.tc.size = 2
+
+gp.tc.0 = ec.gp.GPTreeConstraints
+gp.tc.0.name = tc0
+gp.tc.0.fset = f0
+gp.tc.0.returns = nil
+gp.tc.0.init = ec.gp.koza.GrowBuilder
+gp.tc.0.init.growp = 0.5
+gp.tc.0.init.min = 2
+gp.tc.0.init.max = 6
+
+gp.tc.1 = ec.gp.GPTreeConstraints
+gp.tc.1.name = tc1
+gp.tc.1.fset = f1
+gp.tc.1.returns = nil
+gp.tc.1.init = ec.gp.koza.GrowBuilder
+gp.tc.1.init.growp = 0.5
+gp.tc.1.init.min = 2
+gp.tc.1.init.max = 6
+
+gp.fs.size = 2
+
+gp.fs.0.name = f0
+
+
