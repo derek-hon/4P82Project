@@ -10,7 +10,7 @@ pop.subpop.0.species.ind.tree.0.tc = tc0
 pop.subpop.0.species.ind.tree.1 = ec.gp.GPTree
 pop.subpop.0.species.ind.tree.1.tc = tc1
 
-gp.tc.size = 2
+gp.tc.size = 4
 
 gp.tc.0 = ec.gp.GPTreeConstraints
 gp.tc.0.name = tc0
@@ -30,8 +30,227 @@ gp.tc.1.init.growp = 0.5
 gp.tc.1.init.min = 2
 gp.tc.1.init.max = 6
 
-gp.fs.size = 2
+gp.tc.2 = ec.gp.GPTreeConstraints
+gp.tc.2.name = tc2
+gp.tc.2.fset = f2
+gp.tc.2.returns = nil
+gp.tc.2.init = ec.gp.koza.GrowBuilder
+gp.tc.2.init.growp = 0.5
+gp.tc.2.init.min = 2
+gp.tc.2.init.max = 6
 
+gp.tc.3 = ec.gp.GPTreeConstraints
+gp.tc.3.name = tc3
+gp.tc.3.fset = f3
+gp.tc.3.returns = nil
+gp.tc.3.init = ec.gp.koza.GrowBuilder
+gp.tc.3.init.growp = 0.5
+gp.tc.3.init.min = 2
+gp.tc.3.init.max = 6
+
+gp.tc.4 = ec.gp.GPTreeConstraints
+gp.tc.4.name = tc4
+gp.tc.4.fset = f4
+gp.tc.4.returns = nil
+gp.tc.4.init = ec.gp.koza.GrowBuilder
+gp.tc.4.init.growp = 0.5
+gp.tc.4.init.min = 2
+gp.tc.4.init.max = 6
+
+gp.fs.size = 5
+
+#result producing tree
 gp.fs.0.name = f0
 
+gp.fs.0.func.0 = ec.app.Assignment2.func.RegERC
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = ec.app.Assignment2.func.Neg
+gp.fs.0.func.1.nc = nc1
+gp.fs.0.func.2 = ec.app.Assignment2.func.Add
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = ec.app.Assignment2.func.Mul
+gp.fs.0.func.3.nc = nc2
+gp.fs.0.func.4 = ec.app.Assignment2.func.Sub
+gp.fs.0.func.4.nc = nc2
+gp.fs.0.func.5 = ec.app.Assignment2.func.Div
+gp.fs.0.func.5.nc = nc2
+gp.fs.0.func.6 = ec.app.Assignment2.func.Exp
+gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.7 = ec.app.Assignment2.func.NegExp
+gp.fs.0.func.7.nc = nc1
 
+# ADF0 (3 arguments, tree 1)
+gp.fs.0.func.8 = ec.gp.ADF
+gp.fs.0.func.8.nc = nc3
+gp.fs.0.func.8.tree = 1
+gp.fs.0.func.8.name = ADF0
+
+# ADF1 (3 arguments, tree 2)
+gp.fs.0.func.9 = ec.gp.ADF
+gp.fs.0.func.9.nc = nc3
+gp.fs.0.func.9.tree = 2
+gp.fs.0.func.9.name = ADF1
+
+# ADF1 (3 arguments, tree 3)
+gp.fs.0.func.10 = ec.gp.ADF
+gp.fs.0.func.10.nc = nc3
+gp.fs.0.func.10.tree = 2
+gp.fs.0.func.10.name = ADF2
+
+# ADF1 (3 arguments, tree 4)
+gp.fs.0.func.11 = ec.gp.ADF
+gp.fs.0.func.11.nc = nc3
+gp.fs.0.func.11.tree = 2
+gp.fs.0.func.11.name = ADF1
+
+#min
+gp.fs.1.name = f1
+gp.fs.1 = ec.gp.GPFunctionSet
+
+gp.fs.1.func.0 = ec.app.Assignment2.func.RegERC
+gp.fs.1.func.0.nc = nc0
+gp.fs.1.func.1 = ec.app.Assignment2.func.Neg
+gp.fs.1.func.1.nc = nc1
+gp.fs.1.func.2 = ec.app.Assignment2.func.Add
+gp.fs.1.func.2.nc = nc2
+gp.fs.1.func.3 = ec.app.Assignment2.func.Mul
+gp.fs.1.func.3.nc = nc2
+gp.fs.1.func.4 = ec.app.Assignment2.func.Sub
+gp.fs.1.func.4.nc = nc2
+gp.fs.1.func.5 = ec.app.Assignment2.func.Div
+gp.fs.1.func.5.nc = nc2
+gp.fs.1.func.6 = ec.app.Assignment2.func.Exp
+gp.fs.1.func.6.nc = nc1
+gp.fs.1.func.7 = ec.app.Assignment2.func.NegExp
+gp.fs.1.func.7.nc = nc1
+
+# ARG0
+gp.fs.1.func.8 = ec.gp.ADFArgument
+gp.fs.1.func.8.nc = nc0
+gp.fs.1.func.8.arg = 0
+gp.fs.1.func.8.name = ARG0
+
+# ARG1
+gp.fs.1.func.9 = ec.gp.ADFArgument
+gp.fs.1.func.9.nc = nc0
+gp.fs.1.func.9.arg = 1
+gp.fs.1.func.9.name = ARG1
+
+gp.fs.1.func.10 = ec.gp.ADFArgument
+gp.fs.1.func.10.nc = nc0
+gp.fs.1.func.10.arg = 2
+gp.fs.1.func.10.name = ARG2
+
+#max
+gp.fs.2.name = f2
+gp.fs.2 = ec.gp.GPFunctionSet
+
+gp.fs.2.func.0 = ec.app.Assignment2.func.RegERC
+gp.fs.2.func.0.nc = nc0
+gp.fs.2.func.1 = ec.app.Assignment2.func.Neg
+gp.fs.2.func.1.nc = nc1
+gp.fs.2.func.2 = ec.app.Assignment2.func.Add
+gp.fs.2.func.2.nc = nc2
+gp.fs.2.func.3 = ec.app.Assignment2.func.Mul
+gp.fs.2.func.3.nc = nc2
+gp.fs.2.func.4 = ec.app.Assignment2.func.Sub
+gp.fs.2.func.4.nc = nc2
+gp.fs.2.func.5 = ec.app.Assignment2.func.Div
+gp.fs.2.func.5.nc = nc2
+gp.fs.2.func.6 = ec.app.Assignment2.func.Exp
+gp.fs.2.func.6.nc = nc1
+gp.fs.2.func.7 = ec.app.Assignment2.func.NegExp
+gp.fs.2.func.7.nc = nc1
+
+# ARG0
+gp.fs.2.func.8 = ec.gp.ADFArgument
+gp.fs.2.func.8.nc = nc0
+gp.fs.2.func.8.arg = 0
+gp.fs.2.func.8.name = ARG0
+
+# ARG1
+gp.fs.2.func.9 = ec.gp.ADFArgument
+gp.fs.2.func.9.nc = nc0
+gp.fs.2.func.9.arg = 1
+gp.fs.2.func.9.name = ARG1
+
+gp.fs.2.func.10 = ec.gp.ADFArgument
+gp.fs.2.func.10.nc = nc0
+gp.fs.2.func.10.arg = 2
+gp.fs.2.func.10.name = ARG2
+
+#mean
+gp.fs.3.name = f3
+gp.fs.3 = ec.gp.GPFunctionSet
+
+gp.fs.3.func.0 = ec.app.Assignment2.func.RegERC
+gp.fs.3.func.0.nc = nc0
+gp.fs.3.func.1 = ec.app.Assignment2.func.Neg
+gp.fs.3.func.1.nc = nc1
+gp.fs.3.func.2 = ec.app.Assignment2.func.Add
+gp.fs.3.func.2.nc = nc2
+gp.fs.3.func.3 = ec.app.Assignment2.func.Mul
+gp.fs.3.func.3.nc = nc2
+gp.fs.3.func.4 = ec.app.Assignment2.func.Sub
+gp.fs.3.func.4.nc = nc2
+gp.fs.3.func.5 = ec.app.Assignment2.func.Div
+gp.fs.3.func.5.nc = nc2
+gp.fs.3.func.6 = ec.app.Assignment2.func.Exp
+gp.fs.3.func.6.nc = nc1
+gp.fs.3.func.7 = ec.app.Assignment2.func.NegExp
+gp.fs.3.func.7.nc = nc1
+
+# ARG0
+gp.fs.3.func.8 = ec.gp.ADFArgument
+gp.fs.3.func.8.nc = nc0
+gp.fs.3.func.8.arg = 0
+gp.fs.3.func.8.name = ARG0
+
+# ARG1
+gp.fs.3.func.9 = ec.gp.ADFArgument
+gp.fs.3.func.9.nc = nc0
+gp.fs.3.func.9.arg = 1
+gp.fs.3.func.9.name = ARG1
+
+gp.fs.3.func.10 = ec.gp.ADFArgument
+gp.fs.3.func.10.nc = nc0
+gp.fs.3.func.10.arg = 2
+gp.fs.3.func.10.name = ARG2
+
+#standard deviation
+gp.fs.4.name = f4
+gp.fs.4 = ec.gp.GPFunctionSet
+
+gp.fs.4.func.0 = ec.app.Assignment2.func.RegERC
+gp.fs.4.func.0.nc = nc0
+gp.fs.4.func.1 = ec.app.Assignment2.func.Neg
+gp.fs.4.func.1.nc = nc1
+gp.fs.4.func.2 = ec.app.Assignment2.func.Add
+gp.fs.4.func.2.nc = nc2
+gp.fs.4.func.3 = ec.app.Assignment2.func.Mul
+gp.fs.4.func.3.nc = nc2
+gp.fs.4.func.4 = ec.app.Assignment2.func.Sub
+gp.fs.4.func.4.nc = nc2
+gp.fs.4.func.5 = ec.app.Assignment2.func.Div
+gp.fs.4.func.5.nc = nc2
+gp.fs.4.func.6 = ec.app.Assignment2.func.Exp
+gp.fs.4.func.6.nc = nc1
+gp.fs.4.func.7 = ec.app.Assignment2.func.NegExp
+gp.fs.4.func.7.nc = nc1
+
+# ARG0
+gp.fs.4.func.8 = ec.gp.ADFArgument
+gp.fs.4.func.8.nc = nc0
+gp.fs.4.func.8.arg = 0
+gp.fs.4.func.8.name = ARG0
+
+# ARG1
+gp.fs.4.func.9 = ec.gp.ADFArgument
+gp.fs.4.func.9.nc = nc0
+gp.fs.4.func.9.arg = 1
+gp.fs.4.func.9.name = ARG1
+
+gp.fs.4.func.10 = ec.gp.ADFArgument
+gp.fs.4.func.10.nc = nc0
+gp.fs.4.func.10.arg = 2
+gp.fs.4.func.10.name = ARG2
