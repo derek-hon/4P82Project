@@ -1,7 +1,7 @@
-package ec.4P82Project.func;
+package ec.Project4P82.func;
 
 import ec.*;
-import ec.4P82Project.*;
+import ec.Project4P82.*;
 import ec.gp.*;
 import ec.util.*;
 

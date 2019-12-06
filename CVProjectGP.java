@@ -1,4 +1,4 @@
-package ec.4P82Project;
+package ec.Project4P82;
 
 import ec.util.*;
 import ec.*;
@@ -23,7 +23,7 @@ import ec.app.regression.*;
  **/
 
 
-public class ComputerVisionGP extends GPProblem implements SimpleProblemForm {
+public class CVProjectGP extends GPProblem implements SimpleProblemForm {
     public static final String P_SEED = "seed";
     public static final String P_GENERALIZE = "generalize";
     public static final String P_TRAIN = "train";

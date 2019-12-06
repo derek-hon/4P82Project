@@ -1,4 +1,4 @@
-package ec.4P82Project;
+package ec.Project4P82;
 
 import ec.gp.*;
 
