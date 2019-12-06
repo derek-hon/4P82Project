@@ -24,8 +24,8 @@ public class Mean15x15 extends GPNode {
                      final ADFStack stack,
                      final GPIndividual individual,
                      final Problem problem) {
-        ComputerVisionData cvd = ((CVProjectData) (input));
-        cvd.d = ((ComputerVisionGP) problem).currentValue[2];
+        CVProjectData cvd = ((CVProjectData) (input));
+        cvd.d = ((CVProjectGP) problem).currentValue[2];
     }
 }
 

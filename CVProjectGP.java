@@ -42,7 +42,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 
     public int seed;
 
-    private PixelInfo info;
+//    private PixelInfo info;
 
     public int weight;
     public String outputName;
@@ -68,13 +68,13 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 
     public Random random;
 
-//    public void setup(final EvolutionState state,
-//                      final Parameter base) {
-//
-//        super.setup(state, base);
-//
-//        if (!(input instanceof ComputerVisionData))
-//            state.output.fatal("GPData class must subclass from " + ComputerVisionGP.class,
+    public void setup(final EvolutionState state,
+                      final Parameter base) {
+
+        super.setup(state, base);
+
+//        if (!(input instanceof CVProjectData))
+//            state.output.fatal("GPData class must subclass from " + CVProjectGP.class,
 //                    base.push(P_DATA), null);
 //
 //        testingPositive = 0;
@@ -168,8 +168,8 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 //        catch (IOException e) {
 //            state.output.fatal("The file could not be read due to an IOException:\n" + e);
 //        }
-//
-//    } //setup
+
+    } //setup
 
     int positiveCount, negativeCount;
     int positiveWeight;
@@ -178,57 +178,57 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
     boolean trainingCheck = false;
     int hits = 0;
 
-    public void testIndividual(final EvolutionState state,
-                               final Individual ind,
-                               final int subpopulation,
-                               final int threadnum,
-                               int size,
-                               double[][] dataInput,
-                               int[] answer) {
-        ComputerVisionData input = (ComputerVisionData) (this.input);
-        double result = 0.0;
-
-        for (int y = 0; y < size; y++) {
-            currentValue = dataInput[y];
-
-            ((GPIndividual) ind).trees[0].child.eval(
-                    state, threadnum, input, stack, ((GPIndividual) ind), this);
-
-//            state.output.message(input.d + "");
-//            result = currentValue[0] - input.d;
-            if (size == testSize) {
-                if (answer[y] == 1 && input.d >= 0.0) {
-                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 3);
-                } //true positive
-                else if (answer[y] == 0 && input.d >= 0.0) {
-                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 1);
-                } //false positive
-                if (answer[y] == 1 && input.d < 0.0) {
-                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 2);
-                }
-                else if (answer[y] == 0 && input.d < 0.0) {
-                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 4);
-                } //true negative
-            }
-
-            if (answer[y] == 1 && input.d >= 0.0) {
-                positiveWeight += weight;
-                positiveCount ++;
-                hits += weight;
-            }
-            else if (answer[y] == 0 && input.d >= 0.0) {
-                falsePositive ++;
-            }
-            if (answer[y] == 1 && input.d < 0.0) {
-                falseNegative ++;
-            }
-            else if (answer[y] == 0 && input.d < 0.0) {
-                negativeCount ++;
-                hits ++;
-            } //true negative
-            sum += 1.0 - (hits/((double)size + positiveWeight));
-        } //training
-    }
+//    public void testIndividual(final EvolutionState state,
+//                               final Individual ind,
+//                               final int subpopulation,
+//                               final int threadnum,
+//                               int size,
+//                               double[][] dataInput,
+//                               int[] answer) {
+//        CVProjectData input = (CVProjectData) (this.input);
+//        double result = 0.0;
+//
+//        for (int y = 0; y < size; y++) {
+//            currentValue = dataInput[y];
+//
+//            ((GPIndividual) ind).trees[0].child.eval(
+//                    state, threadnum, input, stack, ((GPIndividual) ind), this);
+//
+////            state.output.message(input.d + "");
+////            result = currentValue[0] - input.d;
+//            if (size == testSize) {
+//                if (answer[y] == 1 && input.d >= 0.0) {
+//                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 3);
+//                } //true positive
+//                else if (answer[y] == 0 && input.d >= 0.0) {
+//                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 1);
+//                } //false positive
+//                if (answer[y] == 1 && input.d < 0.0) {
+//                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 2);
+//                }
+//                else if (answer[y] == 0 && input.d < 0.0) {
+//                    setResultPixelData(y, (int)dataInput[y][0], (int)dataInput[y][1], 4);
+//                } //true negative
+//            }
+//
+//            if (answer[y] == 1 && input.d >= 0.0) {
+//                positiveWeight += weight;
+//                positiveCount ++;
+//                hits += weight;
+//            }
+//            else if (answer[y] == 0 && input.d >= 0.0) {
+//                falsePositive ++;
+//            }
+//            if (answer[y] == 1 && input.d < 0.0) {
+//                falseNegative ++;
+//            }
+//            else if (answer[y] == 0 && input.d < 0.0) {
+//                negativeCount ++;
+//                hits ++;
+//            } //true negative
+//            sum += 1.0 - (hits/((double)size + positiveWeight));
+//        } //training
+//    }
 
 //    private void setResultPixelData(int index, int x, int y, int colour) {
 //        resultPixelData[index][0] = x;
@@ -243,10 +243,10 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
      * @param subpopulation
      * @param threadnum
      */
-//    public void evaluate(final EvolutionState state,
-//                         final Individual ind,
-//                         final int subpopulation,
-//                         final int threadnum) {
+    public void evaluate(final EvolutionState state,
+                         final Individual ind,
+                         final int subpopulation,
+                         final int threadnum) {
 //        if (!ind.evaluated)  // don't bother reevaluating
 //        {
 //            positiveWeight = 0;
@@ -266,7 +266,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 //
 //
 //        }
-//    }
+    }
 //
 //    public void describe(final EvolutionState state,
 //                         final Individual ind,
