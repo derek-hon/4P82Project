@@ -62,8 +62,8 @@ public class RegressionStatisticsA extends SimpleStatistics {
         }
 
         // print the best-of-generation individual
-//        if (doGeneration) state.output.println("\nGeneration: " + state.generation, statisticslog);
-//        if (doGeneration) state.output.println("Best Individual:", statisticslog);
+        if (doGeneration) state.output.println("\nGeneration: " + state.generation, statisticslog);
+        if (doGeneration) state.output.println("Best Individual:", statisticslog);
         for (int x = 0; x < state.population.subpops.length; x++) {
             float avgStandardizedFitness = 0,
                     avgTreeSize = 0,

@@ -339,7 +339,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 
             endtime = System.currentTimeMillis();
 
-            state.output.println("Total elapsed time:\nminutes: " + (endtime - startTime)/60000 + "  seconds: "
+            state.output.println("Total elapsed time:\nseconds: "
                     + (endtime - startTime)/1000 + " milliseconds: " + (endtime - startTime), log);
         }
     }

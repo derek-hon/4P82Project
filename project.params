@@ -1,17 +1,11 @@
 parent.0 = ../gp/koza/koza.params
 
-breedthreads	= 1
-evalthreads	= 1
+breedthreads = 1
+evalthreads	 = 1
 
-pop.subpop.0.species.ind.numtrees = 2
-
-#Result producing tree
-pop.subpop.0.species.ind.tree.0 = ec.gp.GPTree
-pop.subpop.0.species.ind.tree.0.tc = tc0
-
-#ADF tree
-pop.subpop.0.species.ind.tree.1 = ec.gp.GPTree
-pop.subpop.0.species.ind.tree.1.tc = tc1
+#seed.0 = 48392048
+#seed.1 = 902384
+#seed.2 = 489000980
 
 gp.tc.size = 5
 
@@ -83,29 +77,29 @@ gp.fs.0.func.6.nc = nc1
 gp.fs.0.func.7 = ec.Project4P82.func.NegExp
 gp.fs.0.func.7.nc = nc1
 
-# ADF0 (3 arguments, tree 1)
+# ADF0 (2 arguments, tree 1)
 gp.fs.0.func.8 = ec.gp.ADF
-gp.fs.0.func.8.nc = nc3
+gp.fs.0.func.8.nc = nc2
 gp.fs.0.func.8.tree = 1
-gp.fs.0.func.8.name = ADF0
+gp.fs.0.func.8.name = ADFMin
 
-# ADF1 (3 arguments, tree 2)
+# ADF1 (2 arguments, tree 2)
 gp.fs.0.func.9 = ec.gp.ADF
-gp.fs.0.func.9.nc = nc3
+gp.fs.0.func.9.nc = nc2
 gp.fs.0.func.9.tree = 2
-gp.fs.0.func.9.name = ADF1
+gp.fs.0.func.9.name = ADFMax
 
-# ADF1 (3 arguments, tree 3)
+# ADF1 (2 arguments, tree 3)
 gp.fs.0.func.10 = ec.gp.ADF
-gp.fs.0.func.10.nc = nc3
-gp.fs.0.func.10.tree = 2
-gp.fs.0.func.10.name = ADF2
+gp.fs.0.func.10.nc = nc2
+gp.fs.0.func.10.tree = 3
+gp.fs.0.func.10.name = ADFMean
 
-# ADF1 (3 arguments, tree 4)
+# ADF1 (2 arguments, tree 4)
 gp.fs.0.func.11 = ec.gp.ADF
-gp.fs.0.func.11.nc = nc3
-gp.fs.0.func.11.tree = 2
-gp.fs.0.func.11.name = ADF1
+gp.fs.0.func.11.nc = nc2
+gp.fs.0.func.11.tree = 4
+gp.fs.0.func.11.name = ADFSTD
 
 gp.fs.0.func.12 = ec.Project4P82.func.Mean15x15
 gp.fs.0.func.12.nc = nc0
@@ -166,17 +160,17 @@ gp.fs.1.func.9.arg = 1
 gp.fs.1.func.9.name = ARG1
 
 #ARG2
-gp.fs.1.func.10 = ec.gp.ADFArgument
-gp.fs.1.func.10.nc = nc0
-gp.fs.1.func.10.arg = 2
-gp.fs.1.func.10.name = ARG2
+#gp.fs.1.func.10 = ec.gp.ADFArgument
+#gp.fs.1.func.10.nc = nc0
+#gp.fs.1.func.10.arg = 2
+#gp.fs.1.func.10.name = ARG2
 
-gp.fs.1.func.11 = ec.Project4P82.func.Min15x15
+gp.fs.1.func.10 = ec.Project4P82.func.Min15x15
+gp.fs.1.func.10.nc = nc0
+gp.fs.1.func.11 = ec.Project4P82.func.Min17x17
 gp.fs.1.func.11.nc = nc0
-gp.fs.1.func.12 = ec.Project4P82.func.Min17x17
+gp.fs.1.func.12 = ec.Project4P82.func.Min19x19
 gp.fs.1.func.12.nc = nc0
-gp.fs.1.func.13 = ec.Project4P82.func.Min19x19
-gp.fs.1.func.13.nc = nc0
 
 #max
 gp.fs.2.name = f2
@@ -212,17 +206,17 @@ gp.fs.2.func.9.arg = 1
 gp.fs.2.func.9.name = ARG1
 
 #ARG2
-gp.fs.2.func.10 = ec.gp.ADFArgument
-gp.fs.2.func.10.nc = nc0
-gp.fs.2.func.10.arg = 2
-gp.fs.2.func.10.name = ARG2
+#gp.fs.2.func.10 = ec.gp.ADFArgument
+#gp.fs.2.func.10.nc = nc0
+#gp.fs.2.func.10.arg = 2
+#gp.fs.2.func.10.name = ARG2
 
-gp.fs.2.func.11 = ec.Project4P82.func.Max15x15
+gp.fs.2.func.10 = ec.Project4P82.func.Max15x15
+gp.fs.2.func.10.nc = nc0
+gp.fs.2.func.11 = ec.Project4P82.func.Max17x17
 gp.fs.2.func.11.nc = nc0
-gp.fs.2.func.12 = ec.Project4P82.func.Max17x17
+gp.fs.2.func.12 = ec.Project4P82.func.Max19x19
 gp.fs.2.func.12.nc = nc0
-gp.fs.2.func.13 = ec.Project4P82.func.Max19x19
-gp.fs.2.func.13.nc = nc0
 
 #mean
 gp.fs.3.name = f3
@@ -258,17 +252,17 @@ gp.fs.3.func.9.arg = 1
 gp.fs.3.func.9.name = ARG1
 
 #ARG3
-gp.fs.3.func.10 = ec.gp.ADFArgument
-gp.fs.3.func.10.nc = nc0
-gp.fs.3.func.10.arg = 2
-gp.fs.3.func.10.name = ARG2
+#gp.fs.3.func.10 = ec.gp.ADFArgument
+#gp.fs.3.func.10.nc = nc0
+#gp.fs.3.func.10.arg = 2
+#gp.fs.3.func.10.name = ARG2
 
-gp.fs.3.func.11 = ec.Project4P82.func.Mean15x15
+gp.fs.3.func.10 = ec.Project4P82.func.Mean15x15
+gp.fs.3.func.10.nc = nc0
+gp.fs.3.func.11 = ec.Project4P82.func.Mean17x17
 gp.fs.3.func.11.nc = nc0
-gp.fs.3.func.12 = ec.Project4P82.func.Mean17x17
+gp.fs.3.func.12 = ec.Project4P82.func.Mean19x19
 gp.fs.3.func.12.nc = nc0
-gp.fs.3.func.13 = ec.Project4P82.func.Mean19x19
-gp.fs.3.func.13.nc = nc0
 
 #standard deviation
 gp.fs.4.name = f4
@@ -304,24 +298,24 @@ gp.fs.4.func.9.arg = 1
 gp.fs.4.func.9.name = ARG1
 
 #ARG2
-gp.fs.4.func.10 = ec.gp.ADFArgument
-gp.fs.4.func.10.nc = nc0
-gp.fs.4.func.10.arg = 2
-gp.fs.4.func.10.name = ARG2
+#gp.fs.4.func.10 = ec.gp.ADFArgument
+#gp.fs.4.func.10.nc = nc0
+#gp.fs.4.func.10.arg = 2
+#gp.fs.4.func.10.name = ARG2
 
-gp.fs.4.func.11 = ec.Project4P82.func.StdDeviation15x15
+gp.fs.4.func.10 = ec.Project4P82.func.StdDeviation15x15
+gp.fs.4.func.10.nc = nc0
+gp.fs.4.func.11 = ec.Project4P82.func.StdDeviation17x17
 gp.fs.4.func.11.nc = nc0
-gp.fs.4.func.12 = ec.Project4P82.func.StdDeviation17x17
+gp.fs.4.func.12 = ec.Project4P82.func.StdDeviation19x19
 gp.fs.4.func.12.nc = nc0
-gp.fs.4.func.13 = ec.Project4P82.func.StdDeviation19x19
-gp.fs.4.func.13.nc = nc0
 
 #size of trees
 gp.fs.0.size = 24
-gp.fs.1.size = 14
-gp.fs.2.size = 14
-gp.fs.3.size = 14
-gp.fs.4.size = 14
+gp.fs.1.size = 13
+gp.fs.2.size = 13
+gp.fs.3.size = 13
+gp.fs.4.size = 13
 
 #iamgeOne size = 94016
 #imageTwo size = 82784
@@ -340,7 +334,7 @@ eval.problem.trainSize = 75296
 eval.problem.testSize = 94016
 
 #positive weight
-eval.problem.weight = 50
+eval.problem.weight = 500
 
 #type of test
 eval.problem.testName = C95M05
@@ -375,11 +369,10 @@ pop.subpop.0.species.pipe.source.1.prob = 0.05
 pop.subpop.0.size = 150
 
 pop.subpop.0 = ec.Subpopulation
-pop.subpop.0.size = 50
 pop.subpop.0.species = ec.gp.GPSpecies
 pop.subpop.0.species.fitness = ec.gp.koza.KozaFitness
 pop.subpop.0.species.ind = ec.gp.GPIndividual
-pop.subpop.0.duplicate-retries = 25
+pop.subpop.0.duplicate-retries = 75
 pop.subpop.0.species.ind.numtrees = 5
 pop.subpop.0.species.ind.tree.0 = ec.gp.GPTree
 pop.subpop.0.species.ind.tree.0.tc = tc0
@@ -391,3 +384,4 @@ pop.subpop.0.species.ind.tree.3 = ec.gp.GPTree
 pop.subpop.0.species.ind.tree.3.tc = tc3
 pop.subpop.0.species.ind.tree.4 = ec.gp.GPTree
 pop.subpop.0.species.ind.tree.4.tc = tc4
+
