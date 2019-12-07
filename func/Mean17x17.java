@@ -10,9 +10,9 @@ import ec.util.*;
  * @version 1.0
  */
 
-public class Mean25x25 extends GPNode {
+public class Mean17x17 extends GPNode {
     public String toString() {
-        return "mean25x25";
+        return "mean17x17";
     }
     public int expectedChildren() {
         return 0;

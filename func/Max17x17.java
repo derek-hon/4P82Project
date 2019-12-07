@@ -10,9 +10,9 @@ import ec.util.*;
  * @version 1.0
  */
 
-public class StdDeviation25x25 extends GPNode {
+public class Max17x17 extends GPNode {
     public String toString() {
-        return "std-deviation25x25";
+        return "max17x17";
     }
     public int expectedChildren() {
         return 0;
@@ -25,7 +25,7 @@ public class StdDeviation25x25 extends GPNode {
                      final GPIndividual individual,
                      final Problem problem) {
         CVProjectData cvd = ((CVProjectData) (input));
-        cvd.d = ((CVProjectGP) problem).currentValue[13];
+        cvd.d = ((CVProjectGP) problem).currentValue[10];
     }
 }
 

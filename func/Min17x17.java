@@ -10,9 +10,9 @@ import ec.util.*;
  * @version 1.0
  */
 
-public class Min25x25 extends GPNode {
+public class Min17x17 extends GPNode {
     public String toString() {
-        return "min25x25";
+        return "min17x17";
     }
     public int expectedChildren() {
         return 0;
