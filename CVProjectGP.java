@@ -40,6 +40,8 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
     private static final long serialVersionUID = 1;
     public double[] currentValue = new double[2];
 
+    private long startTime, endtime;
+
     public int seed;
 
     private PixelInfo info;
@@ -72,6 +74,8 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                       final Parameter base) {
 
         super.setup(state, base);
+
+        startTime = System.currentTimeMillis();
 
         if (!(input instanceof CVProjectData))
             state.output.fatal("GPData class must subclass from " + CVProjectGP.class,
@@ -332,6 +336,11 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                                     (((double)negativeCount)/testingNegative)),
                     log);
             info.setNewImage(resultPixelData, resultWidth, resultHeight, seed, outputName);
+
+            endtime = System.currentTimeMillis();
+
+            state.output.println("Total elapsed time:\nminutes: " + (endtime - startTime)/60000 + "  seconds: "
+                    + (endtime - startTime)/1000 + " milliseconds: " + (endtime - startTime), log);
         }
     }
 }
