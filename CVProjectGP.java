@@ -26,10 +26,10 @@ import ec.Project4P82.PixelInfo;
 public class CVProjectGP extends GPProblem implements SimpleProblemForm {
     public static final String P_SEED = "seed";
     public static final String P_GENERALIZE = "generalize";
-    public static final String P_TRAIN = "train";
-    public static final String P_TEST = "test";
     public static final String P_TRAIN_SIZE = "trainSize";
     public static final String P_TEST_SIZE = "testSize";
+    public static final String P_TRAIN = "train";
+    public static final String P_TEST = "test";
     public static final String P_WEIGHT = "weight";
     public static final String P_TEST_NAME = "testName";
 

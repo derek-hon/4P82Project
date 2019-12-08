@@ -12,11 +12,18 @@ import java.io.BufferedWriter;
 import java.io.File;
 
 /**
- * Order: x y 15x15meanfilter 19x19meanfilter 25x25
- *meanfilter 15x15min 19x19min 25x25
- *min 15x15max 19x19max 25x25
- *max 15x15standarddeviation 19x19standarddeviation 25x25
+ * Order: x y 55x55meanfilter 65x65meanfilter 75x75
+ *meanfilter 55x55min 65x65min 75x75
+ *min 55x55max 65x65max 75x75
+ *max 55x55standarddeviation 65x65standarddeviation 75x75
  *standarddeviation hit
+ *
+ * 105x105
+ * 95x95
+ * 85x85
+ * 75x75
+ * 65x65
+ * 55x55
  *
  * False Positive Red
  * False Negative Blue
@@ -28,21 +35,38 @@ public class PixelInfo {
 
     private double[][] trainInfo;
     private double[][] testInfo;
-    private BufferedImage trainOne, testresult, truthOne, trainTwo, truthTwo, trainThree, truthThree, result;
+    private BufferedImage imageTwo, testresult, truthTwo, imageFour, truthFour, trainThree, truthThree, result;
     private ArrayList<Integer> xPoints, testXPoints;
     private ArrayList<Integer> yPoints, testYPoints;
-    private ArrayList<Double> mean15x15, testMean15x15;
-    private ArrayList<Double> mean19x19;
-    private ArrayList<Double> mean25x25;
-    private ArrayList<Double> min15x15;
-    private ArrayList<Double> min19x19;
-    private ArrayList<Double> min25x25;
-    private ArrayList<Double> max15x15;
-    private ArrayList<Double> max19x19;
-    private ArrayList<Double> max25x25;
-    private ArrayList<Double> standardDeviation15x15;
-    private ArrayList<Double> standardDeviation19x19;
-    private ArrayList<Double> standardDeviation25x25;
+    private ArrayList<Double> mean55x55;
+    private ArrayList<Double> mean65x65;
+    private ArrayList<Double> mean75x75;
+    private ArrayList<Double> mean85x85;
+    private ArrayList<Double> mean95x95;
+    private ArrayList<Double> mean105x105;
+
+    private ArrayList<Double> min55x55;
+    private ArrayList<Double> min65x65;
+    private ArrayList<Double> min75x75;
+    private ArrayList<Double> min85x85;
+    private ArrayList<Double> min95x95;
+    private ArrayList<Double> min105x105;
+
+
+    private ArrayList<Double> max55x55;
+    private ArrayList<Double> max65x65;
+    private ArrayList<Double> max75x75;
+    private ArrayList<Double> max85x85;
+    private ArrayList<Double> max95x95;
+    private ArrayList<Double> max105x105;
+
+    private ArrayList<Double> standardDeviation55x55;
+    private ArrayList<Double> standardDeviation65x65;
+    private ArrayList<Double> standardDeviation75x75;
+    private ArrayList<Double> standardDeviation85x85;
+    private ArrayList<Double> standardDeviation95x95;
+    private ArrayList<Double> standardDeviation105x105;
+
     private ArrayList<Integer> hits;
     BufferedWriter bufferedWriter = null;
     public static void main(String[] args) throws IOException {
@@ -58,29 +82,25 @@ public class PixelInfo {
 
         try {
 
-            trainOne = ImageIO.read(new File("images/biggertrain1.png"));
-            truthOne = ImageIO.read(new File("images/biggertruth1.png"));
-            trainTwo = ImageIO.read(new File("images/biggertrain2.png"));
-            truthTwo = ImageIO.read(new File("images/biggertruth2.png"));
+            imageTwo = ImageIO.read(new File("images/biggertrain1.png"));
+            truthTwo = ImageIO.read(new File("images/biggertruth1.png"));
+            imageFour = ImageIO.read(new File("images/biggertrain2.png"));
+            truthFour = ImageIO.read(new File("images/biggertruth2.png"));
             trainThree = ImageIO.read(new File("images/biggertrain3.png"));
             truthThree = ImageIO.read(new File("images/biggertruth3.png"));
 
-            int widthOne = trainOne.getWidth(),
-                    widthTwo = trainTwo.getWidth(),
-                    widthThree = trainThree.getWidth(),
-                    heightOne = trainOne.getHeight(),
-                    heightTwo = trainTwo.getHeight(),
-                    heightThree = trainThree.getHeight();
+            int widthTwo = imageTwo.getWidth(),
+                    widthFour = imageFour.getWidth(),
+//                    widthThree = trainThree.getWidth(),
+                    heightTwo = imageTwo.getHeight(),
+                    heightFour = imageFour.getHeight();
+//                    heightThree = trainThree.getHeight();
 
-            double[][] imageOne, imageTwo, imageThree;
+            double[][] imgInfoTwo, imgInfoFour;
 
-            imageOne = pixelInformation(widthOne, heightOne, trainOne, truthOne);
-            imageTwo = pixelInformation(widthTwo, heightTwo, trainTwo, truthTwo);
-            imageThree = pixelInformation(widthThree, heightThree, trainThree, truthThree);
-
-            System.out.println(imageOne.length + " " + imageOne.length);
-            System.out.println(imageTwo.length + " " + imageTwo.length);
-            System.out.println(imageThree.length + " " + imageThree.length);
+            imgInfoTwo = pixelInformation(widthTwo, heightTwo, imageTwo, truthTwo);
+            imgInfoFour = pixelInformation(widthFour, heightFour, imageFour, truthFour);
+//            imageThree = pixelInformation(widthThree, heightThree, trainThree, truthThree);
 
             new StringBuilder();
             StringBuilder fileOne;
@@ -89,11 +109,11 @@ public class PixelInfo {
 
             File myFile = new File("imageOne.txt");
             Writer writer = new FileWriter(myFile);
-            bufferedWriter = new BufferedWriter(writer, imageOne.length);
+            bufferedWriter = new BufferedWriter(writer, imgInfoTwo.length);
 
-            for (double[] doubles : imageOne) {
+            for (double[] doubles : imgInfoTwo) {
                 fileOne = new StringBuilder();
-                for (int j = 0; j < 15; j++) {
+                for (int j = 0; j < 27; j++) {
                     fileOne.append(doubles[j]).append(" ");
                 }
                 fileOne.append("\n");
@@ -104,12 +124,12 @@ public class PixelInfo {
 
             File myFileTwo = new File("imageTwo.txt");
             Writer writerTwo = new FileWriter(myFileTwo);
-            bufferedWriter = new BufferedWriter(writerTwo, 2*imageTwo.length);
+            bufferedWriter = new BufferedWriter(writerTwo, imgInfoFour.length);
             bufferedWriter.write(fileTwo.toString());
 
-            for (double[] doubles : imageTwo) {
+            for (double[] doubles : imgInfoFour) {
                 fileTwo = new StringBuilder();
-                for (int j = 0; j < 15; j++) {
+                for (int j = 0; j < 27; j++) {
                     fileTwo.append(doubles[j]).append(" ");
                 }
                 fileTwo.append("\n");
@@ -118,29 +138,9 @@ public class PixelInfo {
             }
             bufferedWriter.flush();
 
-            File myFileThree = new File("imageThree.txt");
-            Writer writerThree = new FileWriter(myFileThree);
-            bufferedWriter = new BufferedWriter(writerThree, imageThree.length);
-            bufferedWriter.write(fileThree.toString());
-
-            for (double[] doubles : imageThree) {
-                fileThree = new StringBuilder();
-                for (int j = 0; j < 15; j++) {
-                    fileThree.append(doubles[j]).append(" ");
-                }
-                fileThree.append("\n");
-                bufferedWriter.write(fileThree.toString());
-            }
-
-            bufferedWriter.flush();
-
-//            bufferedWriter.close();
-
-//            bufferedWriter.close();
             if(bufferedWriter != null){
                 writer.flush();
                 writerTwo.flush();
-                writerThree.flush();
                 bufferedWriter.close();
             }
 
@@ -151,100 +151,42 @@ public class PixelInfo {
         }
     }
 
-//    private double[][] pixelInformation(int width, int height, BufferedImage image, BufferedImage truth) {
-//        double[][] info = new double[width*height][15];
-//        double[] filterInformation;
-//
-//        xPoints = new ArrayList<>();
-//        yPoints = new ArrayList<>();
-//        mean15x15 = new ArrayList<>();
-//        mean17x17 = new ArrayList<>();
-//        mean19x19 = new ArrayList<>();
-//        min15x15 = new ArrayList<>();
-//        min17x17 = new ArrayList<>();
-//        min19x19 = new ArrayList<>();
-//        max15x15 = new ArrayList<>();
-//        max17x17 = new ArrayList<>();
-//        max19x19 = new ArrayList<>();
-//        standardDeviation15x15 = new ArrayList<>();
-//        standardDeviation17x17 = new ArrayList<>();
-//        standardDeviation19x19 = new ArrayList<>();
-//        hits = new ArrayList<>();
-//
-//        DecimalFormat df = new DecimalFormat("#.####");
-//
-//        for (int x = 0 ; x < width ; x ++) {
-//            for (int y = 0 ; y < height ; y ++) {
-//                xPoints.add(x);
-//                yPoints.add(y);
-//
-//                //15x15
-//                filterInformation = filters(15, 15/2, x, y, width, height, image);
-//
-//                filterInformation[1]/= filterInformation[0];
-//
-//                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-//                standardDeviation15x15.add(Double.parseDouble(df.format(filterInformation[4])));
-//                mean15x15.add(Double.parseDouble(df.format(filterInformation[1])));
-//                min15x15.add(filterInformation[2]);
-//                max15x15.add(filterInformation[3]);
-//
-//                //17x17
-//                filterInformation = filters(17, 17/2, x, y, width, height, image);
-//
-//                filterInformation[1]/= filterInformation[0];
-//
-//                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-//                standardDeviation17x17.add(Double.parseDouble(df.format(filterInformation[4])));
-//                mean17x17.add(Double.parseDouble(df.format(filterInformation[1])));
-//                min17x17.add(filterInformation[2]);
-//                max17x17.add(filterInformation[3]);
-//
-//                //19x19
-//                filterInformation = filters(19, 19/2, x, y, width, height, image);
-//
-//                filterInformation[1]/= filterInformation[0];
-//
-//                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-//                standardDeviation19x19.add(Double.parseDouble(df.format(filterInformation[4])));
-//                mean19x19.add(Double.parseDouble(df.format(filterInformation[1])));
-//                min19x19.add(filterInformation[2]);
-//                max19x19.add(filterInformation[3]);
-//
-//                int pixelValue = truth.getRGB(x,y);
-//                if (((pixelValue>>16) & 0xff) == 255 && ((pixelValue>>8) & 0xff) == 0 && ((pixelValue & 0xff)) == 0)
-//                    testHits.add(1);
-//                else
-//                    testHits.add(0);
-//            }
-//        }
-
-//        for (int i = 0; i < max15x15.size() ; i ++) {
-//            info[i] = setArrayData(i);
-//        }
-//
-//        return info;
-//    }
-
 
     private double[][] pixelInformation(int width, int height, BufferedImage image, BufferedImage truth) {
-        double[][] info = new double[width*height][15];
+        double[][] info = new double[width*height][27];
         double[] filterInformation;
 
         xPoints = new ArrayList<>();
         yPoints = new ArrayList<>();
-        mean15x15 = new ArrayList<>();
-        mean19x19 = new ArrayList<>();
-        mean25x25 = new ArrayList<>();
-        min15x15 = new ArrayList<>();
-        min19x19 = new ArrayList<>();
-        min25x25 = new ArrayList<>();
-        max15x15 = new ArrayList<>();
-        max19x19 = new ArrayList<>();
-        max25x25 = new ArrayList<>();
-        standardDeviation15x15 = new ArrayList<>();
-        standardDeviation19x19 = new ArrayList<>();
-        standardDeviation25x25 = new ArrayList<>();
+
+        mean55x55 = new ArrayList<>();
+        mean65x65 = new ArrayList<>();
+        mean75x75 = new ArrayList<>();
+        mean85x85 = new ArrayList<>();
+        mean95x95 = new ArrayList<>();
+        mean105x105 = new ArrayList<>();
+
+        min55x55 = new ArrayList<>();
+        min65x65 = new ArrayList<>();
+        min75x75 = new ArrayList<>();
+        min85x85 = new ArrayList<>();
+        min95x95 = new ArrayList<>();
+        min105x105 = new ArrayList<>();
+
+        max55x55 = new ArrayList<>();
+        max65x65 = new ArrayList<>();
+        max75x75 = new ArrayList<>();
+        max85x85 = new ArrayList<>();
+        max95x95 = new ArrayList<>();
+        max105x105 = new ArrayList<>();
+
+        standardDeviation55x55 = new ArrayList<>();
+        standardDeviation65x65 = new ArrayList<>();
+        standardDeviation75x75 = new ArrayList<>();
+        standardDeviation85x85 = new ArrayList<>();
+        standardDeviation95x95 = new ArrayList<>();
+        standardDeviation105x105 = new ArrayList<>();
+
         hits = new ArrayList<>();
 
         DecimalFormat df = new DecimalFormat("#.####");
@@ -254,38 +196,71 @@ public class PixelInfo {
                 xPoints.add(x);
                 yPoints.add(y);
 
-                //15x15
-                filterInformation = filters(15, 15/2, x, y, width, height, image);
+                //55x55
+                filterInformation = filters(55, 55/2, x, y, width, height, image);
 
                 filterInformation[1]/= filterInformation[0];
 
                 filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-                standardDeviation15x15.add(Double.parseDouble(df.format(filterInformation[4])));
-                mean15x15.add(Double.parseDouble(df.format(filterInformation[1])));
-                min15x15.add(filterInformation[2]);
-                max15x15.add(filterInformation[3]);
+                standardDeviation55x55.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean55x55.add(Double.parseDouble(df.format(filterInformation[1])));
+                min55x55.add(filterInformation[2]);
+                max55x55.add(filterInformation[3]);
 
-                //19x19
-                filterInformation = filters(17, 17/2, x, y, width, height, image);
-
-                filterInformation[1]/= filterInformation[0];
-
-                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-                standardDeviation19x19.add(Double.parseDouble(df.format(filterInformation[4])));
-                mean19x19.add(Double.parseDouble(df.format(filterInformation[1])));
-                min19x19.add(filterInformation[2]);
-                max19x19.add(filterInformation[3]);
-
-                //25x25
-                filterInformation = filters(19, 19/2, x, y, width, height, image);
+                //65x65
+                filterInformation = filters(65, 65/2, x, y, width, height, image);
 
                 filterInformation[1]/= filterInformation[0];
 
                 filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-                standardDeviation25x25.add(Double.parseDouble(df.format(filterInformation[4])));
-                mean25x25.add(Double.parseDouble(df.format(filterInformation[1])));
-                min25x25.add(filterInformation[2]);
-                max25x25.add(filterInformation[3]);
+                standardDeviation65x65.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean65x65.add(Double.parseDouble(df.format(filterInformation[1])));
+                min65x65.add(filterInformation[2]);
+                max65x65.add(filterInformation[3]);
+
+                //75x75
+                filterInformation = filters(75, 75/2, x, y, width, height, image);
+
+                filterInformation[1]/= filterInformation[0];
+
+                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
+                standardDeviation75x75.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean75x75.add(Double.parseDouble(df.format(filterInformation[1])));
+                min75x75.add(filterInformation[2]);
+                max75x75.add(filterInformation[3]);
+
+                //85x85
+                filterInformation = filters(85, 85/2, x, y, width, height, image);
+
+                filterInformation[1]/= filterInformation[0];
+
+                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
+                standardDeviation85x85.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean85x85.add(Double.parseDouble(df.format(filterInformation[1])));
+                min85x85.add(filterInformation[2]);
+                max85x85.add(filterInformation[3]);
+
+                //95x95
+                filterInformation = filters(95, 95/2, x, y, width, height, image);
+
+                filterInformation[1]/= filterInformation[0];
+
+                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
+                standardDeviation95x95.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean95x95.add(Double.parseDouble(df.format(filterInformation[1])));
+                min95x95.add(filterInformation[2]);
+                max95x95.add(filterInformation[3]);
+
+                //105x105
+                filterInformation = filters(105, 105/2, x, y, width, height, image);
+
+                filterInformation[1]/= filterInformation[0];
+
+                filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
+                standardDeviation75x75.add(Double.parseDouble(df.format(filterInformation[4])));
+                mean105x105.add(Double.parseDouble(df.format(filterInformation[1])));
+                min105x105.add(filterInformation[2]);
+                max105x105.add(filterInformation[3]);
 
                 int pixelValue = truth.getRGB(x,y);
                 if (((pixelValue>>16) & 0xff) == 255 && ((pixelValue>>8) & 0xff) == 0 && ((pixelValue & 0xff)) == 0)
@@ -295,7 +270,7 @@ public class PixelInfo {
             }
         }
 
-        for (int i = 0; i < max15x15.size() ; i ++) {
+        for (int i = 0; i < max55x55.size() ; i ++) {
             info[i] = setArrayData(i);
         }
 
@@ -303,22 +278,39 @@ public class PixelInfo {
     }
 
     private double[] setArrayData (int index) {
-        double[] arrayToReturn = new double[15];
+        double[] arrayToReturn = new double[27];
         arrayToReturn[0] = xPoints.get(index);
         arrayToReturn[1] = yPoints.get(index);
-        arrayToReturn[2] = mean15x15.get(index);
-        arrayToReturn[3] = mean19x19.get(index);
-        arrayToReturn[4] = mean25x25.get(index);
-        arrayToReturn[5] = min15x15.get(index);
-        arrayToReturn[6] = min19x19.get(index);
-        arrayToReturn[7] = min25x25.get(index);
-        arrayToReturn[8] = max15x15.get(index);
-        arrayToReturn[9] = max19x19.get(index);
-        arrayToReturn[10] = max25x25.get(index);
-        arrayToReturn[11] = standardDeviation15x15.get(index);
-        arrayToReturn[12] = standardDeviation19x19.get(index);
-        arrayToReturn[13] = standardDeviation25x25.get(index);
-        arrayToReturn[14] = hits.get(index);
+
+        arrayToReturn[2] = mean55x55.get(index);
+        arrayToReturn[3] = mean65x65.get(index);
+        arrayToReturn[4] = mean75x75.get(index);
+        arrayToReturn[5] = mean85x85.get(index);
+        arrayToReturn[6] = mean95x95.get(index);
+        arrayToReturn[7] = mean105x105.get(index);
+
+        arrayToReturn[8] = min55x55.get(index);
+        arrayToReturn[9] = min65x65.get(index);
+        arrayToReturn[10] = min75x75.get(index);
+        arrayToReturn[11] = min85x85.get(index);
+        arrayToReturn[12] = min95x95.get(index);
+        arrayToReturn[13] = min105x105.get(index);
+
+        arrayToReturn[14] = max55x55.get(index);
+        arrayToReturn[15] = max65x65.get(index);
+        arrayToReturn[16] = max75x75.get(index);
+        arrayToReturn[17] = max85x85.get(index);
+        arrayToReturn[18] = max95x95.get(index);
+        arrayToReturn[19] = max105x105.get(index);
+
+        arrayToReturn[20] = standardDeviation55x55.get(index);
+        arrayToReturn[21] = standardDeviation65x65.get(index);
+        arrayToReturn[22] = standardDeviation75x75.get(index);
+        arrayToReturn[23] = standardDeviation85x85.get(index);
+        arrayToReturn[24] = standardDeviation95x95.get(index);
+        arrayToReturn[25] = standardDeviation105x105.get(index);
+
+        arrayToReturn[26] = hits.get(index);
 
         return arrayToReturn;
     }

@@ -317,24 +317,22 @@ gp.fs.2.size = 13
 gp.fs.3.size = 13
 gp.fs.4.size = 13
 
-#iamgeOne size = 94016
-#imageTwo size = 82784
-#imageThree size = 75296
-
-#trainingImage
-eval.problem.train = imageThree.txt
-
-#testingImage
-eval.problem.test = imageOne.txt
+#iamgeOne size = 62500
 
 #training size
-eval.problem.trainSize = 75296
+eval.problem.trainSize = 62500
 
 #testing size
-eval.problem.testSize = 94016
+eval.problem.testSize = 62500
+
+#training
+eval.problem.train = imgTwo.txt
+
+#testing
+eval.problem.test = img4.txt
 
 #positive weight
-eval.problem.weight = 500
+eval.problem.weight = 0
 
 #type of test
 eval.problem.testName = C95M05
