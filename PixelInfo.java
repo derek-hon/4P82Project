@@ -78,6 +78,13 @@ public class PixelInfo {
     private ArrayList<Double> standardDeviation95x95;
     private ArrayList<Double> standardDeviation105x105;
 
+    private ArrayList<Double> skew55x55;
+    private ArrayList<Double> skew65x65;
+    private ArrayList<Double> skew75x75;
+    private ArrayList<Double> skew85x85;
+    private ArrayList<Double> skew95x95;
+    private ArrayList<Double> skew105x105;
+
     private ArrayList<Integer> hits;
     BufferedWriter bufferedWriter = null;
     public static void main(String[] args) throws IOException {
@@ -118,7 +125,7 @@ public class PixelInfo {
             StringBuilder fileTwo = new StringBuilder();
             StringBuilder fileThree = new StringBuilder();
 
-            File myFile = new File("imageOne.txt");
+            File myFile = new File("img2big.txt");
             Writer writer = new FileWriter(myFile);
             bufferedWriter = new BufferedWriter(writer, imgInfoTwo.length);
 
@@ -133,7 +140,7 @@ public class PixelInfo {
             }
             bufferedWriter.flush();
 
-            File myFileTwo = new File("imageTwo.txt");
+            File myFileTwo = new File("img4big.txt");
             Writer writerTwo = new FileWriter(myFileTwo);
             bufferedWriter = new BufferedWriter(writerTwo, imgInfoFour.length);
             bufferedWriter.write(fileTwo.toString());
@@ -198,6 +205,14 @@ public class PixelInfo {
         standardDeviation95x95 = new ArrayList<>();
         standardDeviation105x105 = new ArrayList<>();
 
+        skew55x55 = new ArrayList<>();
+        skew65x65 = new ArrayList<>();
+        skew75x75 = new ArrayList<>();
+        skew85x85 = new ArrayList<>();
+        skew95x95 = new ArrayList<>();
+        skew105x105 = new ArrayList<>();
+        skew105x105 = new ArrayList<>();
+
         hits = new ArrayList<>();
 
         DecimalFormat df = new DecimalFormat("#.####");
@@ -217,6 +232,7 @@ public class PixelInfo {
                 mean55x55.add(Double.parseDouble(df.format(filterInformation[1])));
                 min55x55.add(filterInformation[2]);
                 max55x55.add(filterInformation[3]);
+                skew55x55.add(filterInformation[4]);
 
                 //65x65
                 filterInformation = filters(65, 65/2, x, y, width, height, image);
@@ -228,6 +244,7 @@ public class PixelInfo {
                 mean65x65.add(Double.parseDouble(df.format(filterInformation[1])));
                 min65x65.add(filterInformation[2]);
                 max65x65.add(filterInformation[3]);
+                skew65x65.add(filterInformation[4]);
 
                 //75x75
                 filterInformation = filters(75, 75/2, x, y, width, height, image);
@@ -250,6 +267,7 @@ public class PixelInfo {
                 mean85x85.add(Double.parseDouble(df.format(filterInformation[1])));
                 min85x85.add(filterInformation[2]);
                 max85x85.add(filterInformation[3]);
+                skew85x85.add(filterInformation[4]);
 
                 //95x95
                 filterInformation = filters(95, 95/2, x, y, width, height, image);
@@ -261,6 +279,7 @@ public class PixelInfo {
                 mean95x95.add(Double.parseDouble(df.format(filterInformation[1])));
                 min95x95.add(filterInformation[2]);
                 max95x95.add(filterInformation[3]);
+                skew95x95.add(filterInformation[4]);
 
                 //105x105
                 filterInformation = filters(105, 105/2, x, y, width, height, image);
@@ -272,6 +291,7 @@ public class PixelInfo {
                 mean105x105.add(Double.parseDouble(df.format(filterInformation[1])));
                 min105x105.add(filterInformation[2]);
                 max105x105.add(filterInformation[3]);
+                skew105x105.add(filterInformation[4]);
 
                 int pixelValue = truth.getRGB(x,y);
                 if (((pixelValue>>16) & 0xff) == 255 && ((pixelValue>>8) & 0xff) == 0 && ((pixelValue & 0xff)) == 0)
@@ -344,6 +364,7 @@ public class PixelInfo {
         ArrayList<Integer>standardDeviationMeanNumbers = new ArrayList<>();
         double standardDeviation = 0.0;
         int counter = 0;
+        double differenceSummation = 0;
 
         for (int i = 0 ; i < filterSize ; i ++) {
             if ((filterTopLeftX + i) < 0 || (filterTopLeftX + i) > (width - 1)) {
@@ -368,11 +389,28 @@ public class PixelInfo {
             }
         }
 
+        double mean = avgMeanGrayscale/(filterSize*filterSize);
+
         for (Integer meanNumber : standardDeviationMeanNumbers) {
             standardDeviation += Math.pow((meanNumber - avgMeanGrayscale), 2);
         }
 
-        return new double[] {counter, avgMeanGrayscale/(filterSize*filterSize), min, max, standardDeviation};
+        for (int i = 0 ; i < filterSize ; i ++) {
+            if ((filterTopLeftX + i) < 0 || (filterTopLeftX + i) > (width - 1)) {
+                continue;
+            }
+            for (int j = 0; j < filterSize; j++) {
+                if ((filterTopLeftY + j) < 0 || (filterTopLeftY + j) > (height - 1))
+                    continue;
+                int pixelValue = image.getRGB(filterTopLeftX + i, filterTopLeftY + j);
+                int grayscale = (((pixelValue >> 16) & 0xff) + ((pixelValue >> 8) & 0xff) + (pixelValue & 0xff)) / 3;
+                differenceSummation += Math.pow((grayscale - mean), 3);
+            }
+        }
+
+        double skew = differenceSummation/((filterSize - 1)*Math.pow(standardDeviation, 3));
+
+        return new double[] {counter, mean, min, max, standardDeviation, skew};
     }
 
     protected  void setNewImage(int[][] newPixelData, int width, int height, int imgNumber, String name, String imgName) {

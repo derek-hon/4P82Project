@@ -377,19 +377,11 @@ eval.problem.trainSize = 62500
 #testing size
 eval.problem.testSize = 62500
 
-#training
-eval.problem.train = image2.txt
-
-#testing
-eval.problem.test = image4.txt
 
 #positive weight
-eval.problem.weight = 5
+eval.problem.weight = 6
 
-#type of test
-eval.problem.testName = C95M05
-
-generations = 76
+generations = 51
 
 #statistics
 stat = ec.Project4P82.RegressionStatisticsA
@@ -404,9 +396,11 @@ eval.problem = ec.Project4P82.CVProjectGP
 eval.problem.data = ec.Project4P82.CVProjectData
 
 #crossover mutation
-gp.koza.xover.maxdepth = 8
-gp.koza.mutation.maxdepth = 8
-gp.koza.half.max-depth = 5
+gp.koza.xover.maxdepth = 10
+gp.koza.mutation.maxdepth = 10
+gp.koza.half.min-depth = 2
+gp.koza.half.max-depth = 6
+gp.koza.half.growp = 0.5
 
 #population
 pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
