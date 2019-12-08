@@ -18,8 +18,14 @@ public class RegressionStatisticsA extends SimpleStatistics {
 
     public Individual bestIndividual = null;
 
+    public Individual[] bestIndividuals;
+
     public Individual getBestIndividual() {
         return bestIndividual;
+    }
+
+    public Individual[] getBestIndividuals() {
+        return bestIndividuals;
     }
 
     public void setup(final EvolutionState state, final Parameter base) {
@@ -34,6 +40,7 @@ public class RegressionStatisticsA extends SimpleStatistics {
         super.postEvaluationStatistics(state);
 
         // for now we just print the best fitness per subpopulation.
+//        bestIndividuals = new Individual[state.population.subpops.length];
         Individual[] best_i = new Individual[state.population.subpops.length];  // quiets compiler complaints
         for (int x = 0; x < state.population.subpops.length; x++) {
             best_i[x] = state.population.subpops[x].individuals[0];
@@ -54,12 +61,12 @@ public class RegressionStatisticsA extends SimpleStatistics {
             }
 
             // now test to see if it's the new best_of_run
-            if  (bestIndividual == null || best_i[x].fitness.betterThan(bestIndividual.fitness))
-                bestIndividual = (Individual)(best_i[x].clone());
 
             if (best_of_run[x] == null || best_i[x].fitness.betterThan(best_of_run[x].fitness))
                 best_of_run[x] = (Individual) (best_i[x].clone());
         }
+
+        bestIndividuals = best_i;
 
         // print the best-of-generation individual
         if (doGeneration) state.output.println("\nGeneration: " + state.generation, statisticslog);

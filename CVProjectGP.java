@@ -43,6 +43,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
     private long startTime, endtime;
 
     public int seed;
+    public int totalHits;
 
     private PixelInfo info;
 
@@ -76,6 +77,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
         super.setup(state, base);
 
         startTime = System.currentTimeMillis();
+        totalHits = 0;
 
         if (!(input instanceof CVProjectData))
             state.output.fatal("GPData class must subclass from " + CVProjectGP.class,
@@ -103,7 +105,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
         try {
             info = new PixelInfo(true);
 
-            trainingInput = new double[trainSize][14];
+            trainingInput = new double[trainSize][26];
             trainingAnswers = new int[trainSize];
             String dataLines[] = new String[trainSize];
             String testingLines[] = new String[testSize];
@@ -119,6 +121,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
 
             for (int i = 0; i < dataLines.length; i++) {
                 trainingAnswers[i] = Integer.parseInt(dataLines[i].substring(dataLines[i].length() - 4, dataLines[i].length() - 3));
+                totalHits = (trainingAnswers[i] == 1) ? totalHits + 1 : totalHits;
 
                 String[] parameterValues = dataLines[i].substring(0, dataLines[i].length() - 4).split(" ");
 
@@ -130,7 +133,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
             if (testGeneralization) {
                 resultPixelData = new int[testSize][3];
                 testingAnswers = new int[testSize];
-                testingInput = new double[testSize][14];
+                testingInput = new double[testSize][26];
                 //Scanning and storing all our testing sets
                 for (int x = 0; x < testSize; x++) {
                     String testingLine  = scanTest.nextLine();
@@ -266,6 +269,8 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
             KozaFitness f = ((KozaFitness) ind.fitness);
             f.setStandardizedFitness(state, sum);
             f.hits = hits;
+            f.hitPercent = (((((double)positiveCount)/testingPositive) +
+                    (((double)negativeCount)/testingNegative))/2);
             ind.evaluated = true;
 
 
@@ -291,7 +296,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                     (state.statistics instanceof RegressionStatisticsA ||
                             state.statistics instanceof SimpleStatistics)) {
                 if (state.statistics instanceof RegressionStatisticsA)
-                    bestIndividual = ((RegressionStatisticsA)(state.statistics)).getBestIndividual();
+                    bestIndividual = ((RegressionStatisticsA)(state.statistics)).getBestIndividuals()[subpopulation];
                 if (bestIndividual == null)
                     state.output.fatal("Failed to obtain best individual.");
             }
@@ -311,7 +316,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
         }
 
         if (testGeneralization) {
-            state.output.println("\n\nBest Individual\n", log);
+            state.output.println("\n\nBest Individual Subpop: " + subpopulation + "\n", log);
             bestIndividual.printIndividualForHumans(state, log);
 
             state.output.println("\n\nTesting set size: " + testSize + "\n\nBest Individual's Generalization Score...\n" +
@@ -335,7 +340,7 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                             Math.max((((double)positiveCount)/testingPositive),
                                     (((double)negativeCount)/testingNegative)),
                     log);
-            info.setNewImage(resultPixelData, resultWidth, resultHeight, seed, outputName);
+            info.setNewImage(resultPixelData, resultWidth, resultHeight, seed, outputName, "_subpop" + subpopulation);
 
             endtime = System.currentTimeMillis();
 

@@ -12,11 +12,22 @@ import java.io.BufferedWriter;
 import java.io.File;
 
 /**
- * Order: x y 55x55meanfilter 65x65meanfilter 75x75
- *meanfilter 55x55min 65x65min 75x75
- *min 55x55max 65x65max 75x75
- *max 55x55standarddeviation 65x65standarddeviation 75x75
- *standarddeviation hit
+ * Order:
+ * x
+ * y
+ * 55x55meanfilter
+ * 65x65meanfilter
+ * 75x75meanfilter
+ * 55x55min
+ * 65x65min
+ * 75x75min
+ * 55x55max
+ * 65x65max
+ * 75x75max
+ * 55x55standarddeviation
+ * 65x65standarddeviation
+ * 75x75standarddeviation
+ * hit
  *
  * 105x105
  * 95x95
@@ -82,12 +93,12 @@ public class PixelInfo {
 
         try {
 
-            imageTwo = ImageIO.read(new File("images/biggertrain1.png"));
-            truthTwo = ImageIO.read(new File("images/biggertruth1.png"));
-            imageFour = ImageIO.read(new File("images/biggertrain2.png"));
-            truthFour = ImageIO.read(new File("images/biggertruth2.png"));
-            trainThree = ImageIO.read(new File("images/biggertrain3.png"));
-            truthThree = ImageIO.read(new File("images/biggertruth3.png"));
+            imageTwo = ImageIO.read(new File("images/img2test.png"));
+            truthTwo = ImageIO.read(new File("images/img2testtruth.png"));
+            imageFour = ImageIO.read(new File("images/img4train.png"));
+            truthFour = ImageIO.read(new File("images/img4truth.png"));
+//            trainThree = ImageIO.read(new File("images/biggertrain3.png"));
+//            truthThree = ImageIO.read(new File("images/biggertruth3.png"));
 
             int widthTwo = imageTwo.getWidth(),
                     widthFour = imageFour.getWidth(),
@@ -257,7 +268,7 @@ public class PixelInfo {
                 filterInformation[1]/= filterInformation[0];
 
                 filterInformation[4] = Math.sqrt(filterInformation[4]/filterInformation[0]);
-                standardDeviation75x75.add(Double.parseDouble(df.format(filterInformation[4])));
+                standardDeviation105x105.add(Double.parseDouble(df.format(filterInformation[4])));
                 mean105x105.add(Double.parseDouble(df.format(filterInformation[1])));
                 min105x105.add(filterInformation[2]);
                 max105x105.add(filterInformation[3]);
@@ -364,7 +375,7 @@ public class PixelInfo {
         return new double[] {counter, avgMeanGrayscale/(filterSize*filterSize), min, max, standardDeviation};
     }
 
-    protected  void setNewImage(int[][] newPixelData, int width, int height, int imgNumber, String name) {
+    protected  void setNewImage(int[][] newPixelData, int width, int height, int imgNumber, String name, String imgName) {
         result = new BufferedImage(width + 1, height + 1, BufferedImage.TYPE_INT_RGB);
 
         for (int[] newPixelDatum : newPixelData) {
@@ -388,11 +399,11 @@ public class PixelInfo {
 
         try {
             int number = 0;
-            String file = "ec/Project4P82/" + name + "Images/"+ name + "_" + number +".png";
+            String file = "ec/Project4P82/" + name + "Images/"+ name + "_" + imgName + "_" + number +".png";
             File temp = new File(file);
             while (temp.exists()) {
                 number ++;
-                file = "ec/Project4P82/" + name + "Images/"+ name + "_" + number +".png";
+                file = "ec/Project4P82/" + name + "Images/"+ name + "_" + imgName +  "_" + number +".png";
                 temp = new File(file);
             }
 

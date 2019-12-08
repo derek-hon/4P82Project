@@ -1,11 +1,12 @@
 parent.0 = ../gp/koza/koza.params
 
-breedthreads = 1
-evalthreads	 = 1
+breedthreads = 4
+evalthreads	 = 4
 
-#seed.0 = 48392048
-#seed.1 = 902384
-#seed.2 = 489000980
+seed.0 = 48392048
+seed.1 = 902384
+seed.2 = 489000980
+seed.3 = 1238590
 
 gp.tc.size = 5
 
@@ -101,30 +102,57 @@ gp.fs.0.func.11.nc = nc2
 gp.fs.0.func.11.tree = 4
 gp.fs.0.func.11.name = ADFSTD
 
-gp.fs.0.func.12 = ec.Project4P82.func.Mean15x15
+gp.fs.0.func.12 = ec.Project4P82.func.Mean55x55
 gp.fs.0.func.12.nc = nc0
-gp.fs.0.func.13 = ec.Project4P82.func.Mean17x17
+gp.fs.0.func.13 = ec.Project4P82.func.Mean65x65
 gp.fs.0.func.13.nc = nc0
-gp.fs.0.func.14 = ec.Project4P82.func.Mean19x19
+gp.fs.0.func.14 = ec.Project4P82.func.Mean75x75
 gp.fs.0.func.14.nc = nc0
-gp.fs.0.func.15 = ec.Project4P82.func.Min15x15
+gp.fs.0.func.15 = ec.Project4P82.func.Mean85x85
 gp.fs.0.func.15.nc = nc0
-gp.fs.0.func.16 = ec.Project4P82.func.Min17x17
+gp.fs.0.func.16 = ec.Project4P82.func.Mean95x95
 gp.fs.0.func.16.nc = nc0
-gp.fs.0.func.17 = ec.Project4P82.func.Min19x19
+gp.fs.0.func.17 = ec.Project4P82.func.Mean105x105
 gp.fs.0.func.17.nc = nc0
-gp.fs.0.func.18 = ec.Project4P82.func.Max15x15
+
+gp.fs.0.func.18 = ec.Project4P82.func.Min55x55
 gp.fs.0.func.18.nc = nc0
-gp.fs.0.func.19 = ec.Project4P82.func.Max17x17
+gp.fs.0.func.19 = ec.Project4P82.func.Min65x65
 gp.fs.0.func.19.nc = nc0
-gp.fs.0.func.20 = ec.Project4P82.func.Max19x19
+gp.fs.0.func.20 = ec.Project4P82.func.Min75x75
 gp.fs.0.func.20.nc = nc0
-gp.fs.0.func.21 = ec.Project4P82.func.StdDeviation15x15
+gp.fs.0.func.21 = ec.Project4P82.func.Min85x85
 gp.fs.0.func.21.nc = nc0
-gp.fs.0.func.22 = ec.Project4P82.func.StdDeviation17x17
+gp.fs.0.func.22 = ec.Project4P82.func.Min95x95
 gp.fs.0.func.22.nc = nc0
-gp.fs.0.func.23 = ec.Project4P82.func.StdDeviation19x19
+gp.fs.0.func.23 = ec.Project4P82.func.Min105x105
 gp.fs.0.func.23.nc = nc0
+
+gp.fs.0.func.24 = ec.Project4P82.func.Max55x55
+gp.fs.0.func.24.nc = nc0
+gp.fs.0.func.25 = ec.Project4P82.func.Max65x65
+gp.fs.0.func.25.nc = nc0
+gp.fs.0.func.26 = ec.Project4P82.func.Max75x75
+gp.fs.0.func.26.nc = nc0
+gp.fs.0.func.27 = ec.Project4P82.func.Max85x85
+gp.fs.0.func.27.nc = nc0
+gp.fs.0.func.28 = ec.Project4P82.func.Max95x95
+gp.fs.0.func.28.nc = nc0
+gp.fs.0.func.29 = ec.Project4P82.func.Max105x105
+gp.fs.0.func.29.nc = nc0
+
+gp.fs.0.func.30 = ec.Project4P82.func.StdDeviation55x55
+gp.fs.0.func.30.nc = nc0
+gp.fs.0.func.31 = ec.Project4P82.func.StdDeviation65x65
+gp.fs.0.func.31.nc = nc0
+gp.fs.0.func.32 = ec.Project4P82.func.StdDeviation75x75
+gp.fs.0.func.32.nc = nc0
+gp.fs.0.func.30 = ec.Project4P82.func.StdDeviation85x85
+gp.fs.0.func.30.nc = nc0
+gp.fs.0.func.31 = ec.Project4P82.func.StdDeviation95x95
+gp.fs.0.func.31.nc = nc0
+gp.fs.0.func.32 = ec.Project4P82.func.StdDeviation105x105
+gp.fs.0.func.32.nc = nc0
 
 #min
 gp.fs.1.name = f1
@@ -165,12 +193,18 @@ gp.fs.1.func.9.name = ARG1
 #gp.fs.1.func.10.arg = 2
 #gp.fs.1.func.10.name = ARG2
 
-gp.fs.1.func.10 = ec.Project4P82.func.Min15x15
+gp.fs.1.func.10 = ec.Project4P82.func.Min55x55
 gp.fs.1.func.10.nc = nc0
-gp.fs.1.func.11 = ec.Project4P82.func.Min17x17
+gp.fs.1.func.11 = ec.Project4P82.func.Min65x65
 gp.fs.1.func.11.nc = nc0
-gp.fs.1.func.12 = ec.Project4P82.func.Min19x19
+gp.fs.1.func.12 = ec.Project4P82.func.Min75x75
 gp.fs.1.func.12.nc = nc0
+gp.fs.1.func.13 = ec.Project4P82.func.Min85x85
+gp.fs.1.func.13.nc = nc0
+gp.fs.1.func.14 = ec.Project4P82.func.Min95x95
+gp.fs.1.func.14.nc = nc0
+gp.fs.1.func.15 = ec.Project4P82.func.Min105x105
+gp.fs.1.func.15.nc = nc0
 
 #max
 gp.fs.2.name = f2
@@ -211,12 +245,18 @@ gp.fs.2.func.9.name = ARG1
 #gp.fs.2.func.10.arg = 2
 #gp.fs.2.func.10.name = ARG2
 
-gp.fs.2.func.10 = ec.Project4P82.func.Max15x15
+gp.fs.2.func.10 = ec.Project4P82.func.Max55x55
 gp.fs.2.func.10.nc = nc0
-gp.fs.2.func.11 = ec.Project4P82.func.Max17x17
+gp.fs.2.func.11 = ec.Project4P82.func.Max65x65
 gp.fs.2.func.11.nc = nc0
-gp.fs.2.func.12 = ec.Project4P82.func.Max19x19
+gp.fs.2.func.12 = ec.Project4P82.func.Max75x75
 gp.fs.2.func.12.nc = nc0
+gp.fs.2.func.13 = ec.Project4P82.func.Max85x85
+gp.fs.2.func.13.nc = nc0
+gp.fs.2.func.14 = ec.Project4P82.func.Max95x95
+gp.fs.2.func.14.nc = nc0
+gp.fs.2.func.15 = ec.Project4P82.func.Max105x105
+gp.fs.2.func.15.nc = nc0
 
 #mean
 gp.fs.3.name = f3
@@ -257,12 +297,18 @@ gp.fs.3.func.9.name = ARG1
 #gp.fs.3.func.10.arg = 2
 #gp.fs.3.func.10.name = ARG2
 
-gp.fs.3.func.10 = ec.Project4P82.func.Mean15x15
+gp.fs.3.func.10 = ec.Project4P82.func.Mean55x55
 gp.fs.3.func.10.nc = nc0
-gp.fs.3.func.11 = ec.Project4P82.func.Mean17x17
+gp.fs.3.func.11 = ec.Project4P82.func.Mean65x65
 gp.fs.3.func.11.nc = nc0
-gp.fs.3.func.12 = ec.Project4P82.func.Mean19x19
+gp.fs.3.func.12 = ec.Project4P82.func.Mean75x75
 gp.fs.3.func.12.nc = nc0
+gp.fs.3.func.13 = ec.Project4P82.func.Mean85x85
+gp.fs.3.func.13.nc = nc0
+gp.fs.3.func.14 = ec.Project4P82.func.Mean95x95
+gp.fs.3.func.14.nc = nc0
+gp.fs.3.func.15 = ec.Project4P82.func.Mean105x105
+gp.fs.3.func.15.nc = nc0
 
 #standard deviation
 gp.fs.4.name = f4
@@ -303,19 +349,25 @@ gp.fs.4.func.9.name = ARG1
 #gp.fs.4.func.10.arg = 2
 #gp.fs.4.func.10.name = ARG2
 
-gp.fs.4.func.10 = ec.Project4P82.func.StdDeviation15x15
+gp.fs.4.func.10 = ec.Project4P82.func.StdDeviation55x55
 gp.fs.4.func.10.nc = nc0
-gp.fs.4.func.11 = ec.Project4P82.func.StdDeviation17x17
+gp.fs.4.func.11 = ec.Project4P82.func.StdDeviation65x65
 gp.fs.4.func.11.nc = nc0
-gp.fs.4.func.12 = ec.Project4P82.func.StdDeviation19x19
+gp.fs.4.func.12 = ec.Project4P82.func.StdDeviation75x75
 gp.fs.4.func.12.nc = nc0
+gp.fs.4.func.13 = ec.Project4P82.func.StdDeviation85x85
+gp.fs.4.func.13.nc = nc0
+gp.fs.4.func.14 = ec.Project4P82.func.StdDeviation95x95
+gp.fs.4.func.14.nc = nc0
+gp.fs.4.func.15 = ec.Project4P82.func.StdDeviation105x105
+gp.fs.4.func.15.nc = nc0
 
 #size of trees
-gp.fs.0.size = 24
-gp.fs.1.size = 13
-gp.fs.2.size = 13
-gp.fs.3.size = 13
-gp.fs.4.size = 13
+gp.fs.0.size = 33
+gp.fs.1.size = 16
+gp.fs.2.size = 16
+gp.fs.3.size = 16
+gp.fs.4.size = 16
 
 #iamgeOne size = 62500
 
@@ -326,18 +378,18 @@ eval.problem.trainSize = 62500
 eval.problem.testSize = 62500
 
 #training
-eval.problem.train = imgTwo.txt
+eval.problem.train = image2.txt
 
 #testing
-eval.problem.test = img4.txt
+eval.problem.test = image4.txt
 
 #positive weight
-eval.problem.weight = 0
+eval.problem.weight = 5
 
 #type of test
 eval.problem.testName = C95M05
 
-generations = 51
+generations = 76
 
 #statistics
 stat = ec.Project4P82.RegressionStatisticsA
