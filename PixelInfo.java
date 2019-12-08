@@ -437,11 +437,15 @@ public class PixelInfo {
 
         try {
             int number = 0;
-            String file = "ec/Project4P82/" + name + "Images/"+ name + "_" + imgName + "_" + number +".png";
+            String directory = "ec/Project4P82/Images/" + name + "/";
+            File dir = new File(directory);
+            if (!dir.exists())
+                dir.mkdir();
+            String file = "ec/Project4P82/Images/"+ name + "/" + imgName + "_" + number +".png";
             File temp = new File(file);
             while (temp.exists()) {
                 number ++;
-                file = "ec/Project4P82/" + name + "Images/"+ name + "_" + imgName +  "_" + number +".png";
+                file = "ec/Project4P82/Images/"+ name + "/" + imgName +  "_" + number +".png";
                 temp = new File(file);
             }
 
