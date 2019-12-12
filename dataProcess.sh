@@ -9,6 +9,7 @@ declare tNegative
 declare fNegative
 declare size
 declare totalHits
+declare runTime
 
 for dir in ec/Project4P82/stat/*; do
   tPositive=0
@@ -94,6 +95,12 @@ for dir in ec/Project4P82/stat/*; do
           totalHits=${h}
         fi
       fi
+      if [[ "$line" =~ ^(seconds: [0-9]{1,3}) ]]; then
+        h=${BASH_REMATCH[0]/secpmds: }
+        if [[ ! ${runTime} ]]; then
+          runTime=${h}
+        fi
+      fi
     done < "$file"
   done
   formula="${tPositive}/10"
@@ -104,13 +111,15 @@ for dir in ec/Project4P82/stat/*; do
   fPositive=$(awk "BEGIN {print ${formula}}")
   formula="${fNegative}/10"
   fNegative=$(awk "BEGIN {print ${formula}}")
+  formula="${runTime}/10"
+  runTime=$(awk "BEGIN {print ${formula}}")
 
   for i in "${!standardAverage[@]}"; do
     standardAverage[i]=$(awk "BEGIN {print ${standardAverage[i]}/10}")
     standardBest[i]=$(awk "BEGIN {print ${standardBest[i]}/10}")
 
     if [[ ${i} == 0 ]]; then
-      stringOutput+="${standardAverage[i]}, ${standardBest[i]}, $tPositive, $fPositive, $tNegative, $fNegative, $totalHits\n"
+      stringOutput+="${standardAverage[i]}, ${standardBest[i]}, $tPositive, $fPositive, $tNegative, $fNegative, $totalHits, $runTime\n"
     else
       stringOutput+="${standardAverage[i]}, ${standardBest[i]},\n"
     fi

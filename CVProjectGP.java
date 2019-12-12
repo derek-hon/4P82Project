@@ -341,11 +341,10 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                                     (((double)negativeCount)/testingNegative)),
                     log);
             info.setNewImage(resultPixelData, resultWidth, resultHeight, seed, outputName, "_subpop" + subpopulation);
-
-            endtime = System.currentTimeMillis();
-
-            state.output.println("Total elapsed time:\nseconds: "
-                    + (endtime - startTime)/1000 + " milliseconds: " + (endtime - startTime), log);
         }
+        endtime = System.currentTimeMillis();
+
+        state.output.println("Total elapsed time:\nseconds: "
+                + (endtime - startTime)/1000 + " milliseconds: " + (endtime - startTime), log);
     }
 }

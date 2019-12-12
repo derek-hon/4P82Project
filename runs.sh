@@ -20,23 +20,23 @@
 #cp out.stat ec/Project4P82/stat/big/big.stat
 for (( i = 1 ; i <= 10 ; i++)); do
 
-java ec.Evolve -file ec/Project4P82/smallFilters/islandSmall.params -p seed.0=${i} -p seed.1=${i} -p seed.2=${i} -p seed.3=${i}
+java ec.Evolve -file ec/Project4P82/smallFilters/islandSmall.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/islandSmall/small_${i}.stat
 
-java ec.Evolve -file ec/Project4P82/mediumFilters/islandMedium.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i}
+java ec.Evolve -file ec/Project4P82/mediumFilters/islandMedium.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/islandMedium/medium_${i}.stat
 
-java ec.Evolve -file ec/Project4P82/bigFilters/islandBig.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i}
+java ec.Evolve -file ec/Project4P82/bigFilters/islandBig.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/islandBig/big_${i}.stat
 
 
-java ec.Evolve -file ec/Project4P82/smallFilters/projectSmall.params -p seed.0=${i} -p seed.1=${i} -p seed.2=${i} -p seed.3=${i}
+java ec.Evolve -file ec/Project4P82/smallFilters/projectSmall.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/small/small_${i}.stat
 
-java ec.Evolve -file ec/Project4P82/mediumFilters/projectMedium.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i}
+java ec.Evolve -file ec/Project4P82/mediumFilters/projectMedium.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/medium/medium_${i}.stat
 
-java ec.Evolve -file ec/Project4P82/bigFilters/projectBig.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i}
+java ec.Evolve -file ec/Project4P82/bigFilters/projectBig.params -p seed.0=${i} seed.1=${i} seed.2=${i} seed.3=${i} seed.4=${i} seed.5=${i} seed.6=${i} seed.7=${i}
 cp out.stat ec/Project4P82/stat/big/big_${i}.stat
 
 #java ec.Evolve -file ec/Project4P82/island.params -p seed.0=${i} seed.1=${i+1} seed.2=${i+2} seed.3=${i+3} eval.problem.train=img2smallerfilters.txt eval.problem.test=img4smallerfilters.txt
