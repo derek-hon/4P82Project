@@ -1,0 +1,147 @@
+parent.0 = ../gp/koza/koza.params
+
+breedthreads = 8
+evalthreads	 = 8
+
+gp.tc.size = 1
+
+gp.tc.0 = ec.gp.GPTreeConstraints
+gp.tc.0.name = tc0
+gp.tc.0.fset = f0
+gp.tc.0.returns = nil
+gp.tc.0.init = ec.gp.koza.HalfBuilder
+gp.tc.0.init.growp = 0.5
+gp.tc.0.init.min = 2
+gp.tc.0.init.max = 6
+
+gp.fs.size = 1
+
+#result producing tree
+gp.fs.0.name = f0
+
+gp.fs.0.func.0 = ec.Project4P82.func.RegERC
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = ec.Project4P82.func.Neg
+gp.fs.0.func.1.nc = nc1
+gp.fs.0.func.2 = ec.Project4P82.func.Add
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = ec.Project4P82.func.Mul
+gp.fs.0.func.3.nc = nc2
+gp.fs.0.func.4 = ec.Project4P82.func.Sub
+gp.fs.0.func.4.nc = nc2
+gp.fs.0.func.5 = ec.Project4P82.func.Div
+gp.fs.0.func.5.nc = nc2
+gp.fs.0.func.6 = ec.Project4P82.func.Exp
+gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.7 = ec.Project4P82.func.NegExp
+gp.fs.0.func.7.nc = nc1
+
+gp.fs.0.func.8 = ec.Project4P82.func.Mean55x55
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = ec.Project4P82.func.Mean65x65
+gp.fs.0.func.9.nc = nc0
+gp.fs.0.func.10 = ec.Project4P82.func.Mean75x75
+gp.fs.0.func.10.nc = nc0
+gp.fs.0.func.11 = ec.Project4P82.func.Mean85x85
+gp.fs.0.func.11.nc = nc0
+gp.fs.0.func.12 = ec.Project4P82.func.Mean95x95
+gp.fs.0.func.12.nc = nc0
+gp.fs.0.func.13 = ec.Project4P82.func.Mean105x105
+gp.fs.0.func.13.nc = nc0
+
+gp.fs.0.func.14 = ec.Project4P82.func.Min55x55
+gp.fs.0.func.14.nc = nc0
+gp.fs.0.func.15 = ec.Project4P82.func.Min65x65
+gp.fs.0.func.15.nc = nc0
+gp.fs.0.func.16 = ec.Project4P82.func.Min75x75
+gp.fs.0.func.16.nc = nc0
+gp.fs.0.func.17 = ec.Project4P82.func.Min85x85
+gp.fs.0.func.17.nc = nc0
+gp.fs.0.func.18 = ec.Project4P82.func.Min95x95
+gp.fs.0.func.18.nc = nc0
+gp.fs.0.func.19 = ec.Project4P82.func.Min105x105
+gp.fs.0.func.19.nc = nc0
+
+gp.fs.0.func.20 = ec.Project4P82.func.Max55x55
+gp.fs.1.func.20.nc = nc0
+gp.fs.1.func.21 = ec.Project4P82.func.Max65x65
+gp.fs.1.func.21.nc = nc0
+gp.fs.1.func.22 = ec.Project4P82.func.Max75x75
+gp.fs.1.func.22.nc = nc0
+gp.fs.1.func.23 = ec.Project4P82.func.Max85x85
+gp.fs.1.func.23.nc = nc0
+gp.fs.1.func.24 = ec.Project4P82.func.Max95x95
+gp.fs.1.func.24.nc = nc0
+gp.fs.1.func.25 = ec.Project4P82.func.Max105x105
+gp.fs.1.func.25.nc = nc0
+
+gp.fs.1.func.26 = ec.Project4P82.func.StdDeviation55x55
+gp.fs.1.func.26.nc = nc0
+gp.fs.1.func.27 = ec.Project4P82.func.StdDeviation65x65
+gp.fs.1.func.27.nc = nc0
+gp.fs.1.func.28 = ec.Project4P82.func.StdDeviation75x75
+gp.fs.1.func.28.nc = nc0
+gp.fs.1.func.29 = ec.Project4P82.func.StdDeviation85x85
+gp.fs.1.func.29.nc = nc0
+gp.fs.1.func.30 = ec.Project4P82.func.StdDeviation95x95
+gp.fs.1.func.30.nc = nc0
+gp.fs.1.func.31 = ec.Project4P82.func.StdDeviation105x105
+gp.fs.1.func.31.nc = nc0
+
+#size of tree
+gp.fs.0.size = 32
+
+#iamgeOne size = 62500
+
+#training size
+eval.problem.trainSize = 62500
+
+#testing size
+eval.problem.testSize = 62500
+
+
+#positive weight
+eval.problem.weight = 6
+
+generations = 51
+
+#statistics
+stat = ec.Project4P82.RegressionStatisticsA
+stat.do-generation = true
+stat.do-message = true
+
+#test generalization
+eval.problem.generalize = true
+
+#problem and problem data
+eval.problem = ec.Project4P82.CVProjectGP
+eval.problem.data = ec.Project4P82.CVProjectData
+
+#crossover mutation
+gp.koza.xover.maxdepth = 8
+gp.koza.mutation.maxdepth = 8
+gp.koza.half.min-depth = 2
+gp.koza.half.max-depth = 6
+gp.koza.half.growp = 0.5
+
+#population
+pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
+# Subsidiary pipelines:
+pop.subpop.0.species.pipe.num-sources = 2
+pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
+pop.subpop.0.species.pipe.source.0.prob = 0.95
+pop.subpop.0.species.pipe.source.1 = ec.gp.koza.MutationPipeline
+pop.subpop.0.species.pipe.source.1.prob = 0.05
+pop.subpop.0.size = 1000
+
+pop.subpop.0 = ec.Subpopulation
+pop.subpop.0.species = ec.gp.GPSpecies
+pop.subpop.0.species.fitness = ec.gp.koza.KozaFitness
+pop.subpop.0.species.ind = ec.gp.GPIndividual
+pop.subpop.0.duplicate-retries = 500
+pop.subpop.0.species.ind.numtrees = 1
+pop.subpop.0.species.ind.tree.0 = ec.gp.GPTree
+pop.subpop.0.species.ind.tree.0.tc = tc0
+
+tournament.size=4
+
