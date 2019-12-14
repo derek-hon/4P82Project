@@ -441,7 +441,7 @@ public class PixelInfo {
             File dir = new File(directory);
             if (!dir.exists())
                 dir.mkdir();
-            String file = "ec/Project4P82/Images/"+ name + "/" + imgName + "_" + number +".png";
+            String file = "ec/Project4P82/Images/"+ name + "/_run" + imgNumber + "_" + imgName + ".png";
             File temp = new File(file);
             while (temp.exists()) {
                 number ++;

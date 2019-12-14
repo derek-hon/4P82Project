@@ -24,7 +24,7 @@ import ec.Project4P82.PixelInfo;
 
 
 public class CVProjectGP extends GPProblem implements SimpleProblemForm {
-    public static final String P_SEED = "seed";
+    public static final String P_SEED = "seed.0";
     public static final String P_GENERALIZE = "generalize";
     public static final String P_TRAIN_SIZE = "trainSize";
     public static final String P_TEST_SIZE = "testSize";
@@ -326,9 +326,9 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                             "\nTrue Negative: " + negativeCount +
                             "\nTest Set Total Hits: " + (positiveCount + negativeCount) +
                             "\nTrue Positive percent: " + (double)positiveCount/(double)testingPositive +
-                            "\nTrue Negative percent: " + (double)negativeCount/(double)testingNegative +
                             "\nFalse Positive percent: " + (double)falsePositive/(double)testingPositive +
-                            "\nFalse Negative percent: " + (double)falseNegative/(double)testingPositive +
+                            "\nTrue Negative percent: " + (double)negativeCount/(double)testingNegative +
+                            "\nFalse Negative percent: " + (double)falseNegative/(double)testingNegative +
                             "\n(positive + negative)/(total positive + total negative):     " +
 
                             (((double)(positiveCount+negativeCount))/(testingPositive+testingNegative)) +

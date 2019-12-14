@@ -10,12 +10,16 @@ declare fNegative
 declare size
 declare totalHits
 declare runTime
+declare counter
+declare totalPercent
 
 for dir in ec/Project4P82/stat/*; do
+  runTime=0
   tPositive=0
   tNegative=0
   fNegative=0
   fPositive=0
+  totalPercent=0
   stringOutput=""
   for file in "$dir"/*.stat; do
     while IFS= read -r line; do
@@ -95,28 +99,64 @@ for dir in ec/Project4P82/stat/*; do
           totalHits=${h}
         fi
       fi
-      if [[ "$line" =~ ^(seconds: [0-9]{1,3}) ]]; then
-        h=${BASH_REMATCH[0]/secpmds: }
-        if [[ ! ${runTime} ]]; then
-          runTime=${h}
+      if [[ "$line" =~ ^(seconds: [0-9]{1,4})[[:blank:]] ]]; then
+        rT=${BASH_REMATCH[0]/seconds: }
+        if [[ ${runTime} ]]; then
+          formula=${rT}+${runTime}
+          runTime=$(awk "BEGIN {print $formula}")
+        else
+          runTime=${rT}
         fi
       fi
+      if [[ "$line" =~ ^((positive + negative)/(total positive + total negative): 0\\.[0-9]{1,4}) ]]; then
+        tP=${BASH_REMATCH[0]/(positive + negative)/(total positive + total negative): }
+        if [[ ${totalPercent} ]]; then
+          formula=${tP}+${totalPercent}
+          totalPercent=$(awk "BEGIN {print $formula}")
+        else
+          totalPercent=${tP}
+        fi
+      fi
+
+      if [["$dir" == "islandBig"]]; then
+
+        if [[ "$line" =~ ^((positive + negative)/(total positive + total negative): 0\\.[0-9]{1,4}) ]]; then
+            tP=${BASH_REMATCH[1]/(positive + negative)/(total positive + total negative): }
+            tpTwo=${BASH_REMATCH[2]/(positive + negative)/(total positive + total negative): }
+            tpThree=${BASH_REMATCH[3]/(positive + negative)/(total positive + total negative): }
+            formula=${tp}+${tpTwo}+${tpThree}+${totalPercent}
+            totalPercent=$(awk "BEGIN {print $formula}")
+        fi
+
+
+      fi
+
+      #(positive + negative)/(total positive + total negative):
     done < "$file"
   done
-  formula="${tPositive}/10"
+
+  if [["$dir" == "islandBig"]]; then
+    counter = 60
+  else
+    counter = 15
+  fi
+
+  formula="${tPositive}/${counter}"
   tPositive=$(awk "BEGIN {print ${formula}}")
-  formula="${tNegative}/10"
+  formula="${tNegative}/${counter}"
   tNegative=$(awk "BEGIN {print ${formula}}")
-  formula="${fPositive}/10"
+  formula="${fPositive}/${counter}"
   fPositive=$(awk "BEGIN {print ${formula}}")
-  formula="${fNegative}/10"
+  formula="${fNegative}/${counter}"
   fNegative=$(awk "BEGIN {print ${formula}}")
-  formula="${runTime}/10"
+  formula="${totalPercent}/${counter}"
+
+  formula="${runTime}/30"
   runTime=$(awk "BEGIN {print ${formula}}")
 
   for i in "${!standardAverage[@]}"; do
-    standardAverage[i]=$(awk "BEGIN {print ${standardAverage[i]}/10}")
-    standardBest[i]=$(awk "BEGIN {print ${standardBest[i]}/10}")
+    standardAverage[i]=$(awk "BEGIN {print ${standardAverage[i]}/${counter}}")
+    standardBest[i]=$(awk "BEGIN {print ${standardBest[i]}/${counter}}")
 
     if [[ ${i} == 0 ]]; then
       stringOutput+="${standardAverage[i]}, ${standardBest[i]}, $tPositive, $fPositive, $tNegative, $fNegative, $totalHits, $runTime\n"
