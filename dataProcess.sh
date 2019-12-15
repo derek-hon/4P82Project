@@ -12,8 +12,9 @@ declare totalHits
 declare runTime
 declare counter
 declare totalPercent
+declare dirName
 
-for dir in ec/Project4P82/stat/*; do
+for dir in stat/*; do
   runTime=0
   tPositive=0
   tNegative=0
@@ -21,6 +22,7 @@ for dir in ec/Project4P82/stat/*; do
   fPositive=0
   totalPercent=0
   stringOutput=""
+  dirName=""
   for file in "$dir"/*.stat; do
     while IFS= read -r line; do
 
@@ -118,13 +120,13 @@ for dir in ec/Project4P82/stat/*; do
         fi
       fi
 
-      if [["$dir" == "islandBig"]]; then
+      if [[ "$dir" =~ ^(island) ]]; then
 
         if [[ "$line" =~ ^((positive + negative)/(total positive + total negative): 0\\.[0-9]{1,4}) ]]; then
             tP=${BASH_REMATCH[1]/(positive + negative)/(total positive + total negative): }
             tpTwo=${BASH_REMATCH[2]/(positive + negative)/(total positive + total negative): }
             tpThree=${BASH_REMATCH[3]/(positive + negative)/(total positive + total negative): }
-            formula=${tp}+${tpTwo}+${tpThree}+${totalPercent}
+            formula=${tP}+${tpTwo}+${tpThree}+${totalPercent}
             totalPercent=$(awk "BEGIN {print $formula}")
         fi
 
@@ -135,10 +137,10 @@ for dir in ec/Project4P82/stat/*; do
     done < "$file"
   done
 
-  if [["$dir" == "islandBig"]]; then
-    counter = 60
+  if [[ "$dir" =~ ^(island) ]]; then
+    counter = 40
   else
-    counter = 15
+    counter = 10
   fi
 
   formula="${tPositive}/${counter}"
