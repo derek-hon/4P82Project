@@ -104,21 +104,25 @@ public class PixelInfo {
             truthTwo = ImageIO.read(new File("images/img2testtruth.png"));
             imageFour = ImageIO.read(new File("images/img4train.png"));
             truthFour = ImageIO.read(new File("images/img4truth.png"));
-//            trainThree = ImageIO.read(new File("images/biggertrain3.png"));
-//            truthThree = ImageIO.read(new File("images/biggertruth3.png"));
 
             int widthTwo = imageTwo.getWidth(),
                     widthFour = imageFour.getWidth(),
-//                    widthThree = trainThree.getWidth(),
                     heightTwo = imageTwo.getHeight(),
                     heightFour = imageFour.getHeight();
-//                    heightThree = trainThree.getHeight();
 
             double[][] imgInfoTwo, imgInfoFour;
 
             imgInfoTwo = pixelInformation(widthTwo, heightTwo, imageTwo, truthTwo);
             imgInfoFour = pixelInformation(widthFour, heightFour, imageFour, truthFour);
-//            imageThree = pixelInformation(widthThree, heightThree, trainThree, truthThree);
+
+//            int positive = 0, negative = 0;
+//            for (double[] a : imgInfoFour)
+//                if (a[26] == 1.0)
+//                    positive ++;
+//                else
+//                    negative ++;
+//            System.out.println(positive + "");
+//            System.out.println(negative + "");
 
             new StringBuilder();
             StringBuilder fileOne;

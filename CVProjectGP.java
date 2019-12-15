@@ -170,6 +170,8 @@ public class CVProjectGP extends GPProblem implements SimpleProblemForm {
                         testingInput[i][j] = Double.parseDouble(parameterValues[j]);
                     }
                 }
+
+//                state.output.fatal("pos" + testingPositive + " neg" + testingNegative);
             }
         }
         catch (IOException e) {
