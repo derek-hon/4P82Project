@@ -100,10 +100,10 @@ public class PixelInfo {
 
         try {
 
-            imageTwo = ImageIO.read(new File("images/img2test.png"));
-            truthTwo = ImageIO.read(new File("images/img2testtruth.png"));
-            imageFour = ImageIO.read(new File("images/img4train.png"));
-            truthFour = ImageIO.read(new File("images/img4truth.png"));
+            imageTwo = ImageIO.read(new File("images/img2train.png"));
+            truthTwo = ImageIO.read(new File("images/img2traintruth.png"));
+            imageFour = ImageIO.read(new File("images/img4testing.png"));
+            truthFour = ImageIO.read(new File("images/img4testtruth.png"));
 
             int widthTwo = imageTwo.getWidth(),
                     widthFour = imageFour.getWidth(),
@@ -129,7 +129,7 @@ public class PixelInfo {
             StringBuilder fileTwo = new StringBuilder();
             StringBuilder fileThree = new StringBuilder();
 
-            File myFile = new File("img2big.txt");
+            File myFile = new File("img2train.txt");
             Writer writer = new FileWriter(myFile);
             bufferedWriter = new BufferedWriter(writer, imgInfoTwo.length);
 
@@ -144,7 +144,7 @@ public class PixelInfo {
             }
             bufferedWriter.flush();
 
-            File myFileTwo = new File("img4big.txt");
+            File myFileTwo = new File("img4test.txt");
             Writer writerTwo = new FileWriter(myFileTwo);
             bufferedWriter = new BufferedWriter(writerTwo, imgInfoFour.length);
             bufferedWriter.write(fileTwo.toString());

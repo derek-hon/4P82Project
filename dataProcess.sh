@@ -128,7 +128,7 @@ for dir in stat/*; do
     done < "$file"
   done
 
-  if [[ "$dir" =~ ^(island) ]]; then
+  if [[ "$dir" =~ (island) ]]; then
     counter=40
   else
     counter=10

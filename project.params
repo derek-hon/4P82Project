@@ -157,7 +157,7 @@ generations = 51
 #statistics
 stat = ec.Project4P82.RegressionStatisticsA
 stat.do-generation = true
-stat.do-message = true
+stat.do-message = false
 
 #test generalization
 eval.problem.generalize = true
