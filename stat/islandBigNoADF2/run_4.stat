@@ -1,0 +1,2358 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=36628.37413272536 Adjusted=2.7300493761551376E-5 Hits=51199
+Tree 0:
+ (- (- (+ mean55x55 min55x55) (+ mean65x65
+     mean85x85)) (* (* max55x55 std-deviation55x55)
+     (% min105x105 mean55x55)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=36538.29374603792 Adjusted=2.7367797717995946E-5 Hits=51733
+Tree 0:
+ (* (0- (* mean105x105 min65x65)) (0- (0-
+     min95x95)))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36505.974258304544 Adjusted=2.7392026326929072E-5 Hits=51860
+Tree 0:
+ (* (% (0- mean75x75) (* min105x105 min75x75))
+     (+ (% max65x65 max75x75) (negexp min105x105)))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36627.04642206708 Adjusted=2.7301483362692694E-5 Hits=51214
+Tree 0:
+ (0- min95x95)
+
+Generation: 0
+Best Individual:
+Adjusted Fitness: 	2.7300493761551376E-5	2.3932382E-5
+Standardized Fitness	36628.37413272536	42080.76
+Adjusted Fitness: 	2.7367797717995946E-5	2.4088245E-5
+Standardized Fitness	36538.29374603792	41706.242
+Adjusted Fitness: 	2.7392026326929072E-5	2.384023E-5
+Standardized Fitness	36505.974258304544	42289.305
+Adjusted Fitness: 	2.7301483362692694E-5	2.4091452E-5
+Standardized Fitness	36627.04642206708	41826.18
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=36489.25735600246 Adjusted=2.7404575151221978E-5 Hits=51917
+Tree 0:
+ (* (% (* (% std-deviation75x75 max55x55)
+     (exp max85x85)) (- (- min85x85 max65x65)
+     (% mean55x55 max85x85))) (% (* min95x95 (*
+     max75x75 mean105x105)) (- (- min85x85 mean75x75)
+     (0- mean95x95))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=36539.55552262713 Adjusted=2.7366852684567606E-5 Hits=51718
+Tree 0:
+ (0- (* (- (* min105x105 min65x65) (% max95x95
+     std-deviation105x105)) (- (+ mean95x95 max75x75)
+     (* mean85x85 max95x95))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36505.974258304544 Adjusted=2.7392026326929072E-5 Hits=51860
+Tree 0:
+ (* (% (0- mean75x75) (* min105x105 min75x75))
+     (+ (% max65x65 max75x75) (exp (+ (0- (% (+
+         min65x65 -0.5419158793110337) (negexp min105x105)))
+         (- (exp (* std-deviation55x55 mean95x95))
+             (0- (exp max75x75)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36538.29374603792 Adjusted=2.7367797717995946E-5 Hits=51733
+Tree 0:
+ (* (0- (* mean105x105 min65x65)) (0- (0-
+     min95x95)))
+
+Generation: 1
+Best Individual:
+Adjusted Fitness: 	2.7404575151221978E-5	2.5343023E-5
+Standardized Fitness	36489.25735600246	39708.9
+Adjusted Fitness: 	2.7366852684567606E-5	2.541923E-5
+Standardized Fitness	36539.55552262713	39589.42
+Adjusted Fitness: 	2.7392026326929072E-5	2.5505204E-5
+Standardized Fitness	36505.974258304544	39452.03
+Adjusted Fitness: 	2.7367797717995946E-5	2.5544252E-5
+Standardized Fitness	36538.29374603792	39391.406
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=36395.02568956168 Adjusted=2.7475527370198513E-5 Hits=52416
+Tree 0:
+ (* (% (* (0- (0- min105x105)) (exp max85x85))
+     (- (- min85x85 max65x65) (% mean55x55 max85x85)))
+     (% (* min95x95 (* max75x75 mean105x105))
+         (- (- min85x85 mean75x75) (0- mean95x95))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=36465.59534468442 Adjusted=2.742235710649543E-5 Hits=52182
+Tree 0:
+ (0- (* (- (* min105x105 min65x65) (% max95x95
+     std-deviation105x105)) (- (* max55x55 min55x55)
+     (* mean85x85 max95x95))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36419.14450217254 Adjusted=2.7457332025147452E-5 Hits=52379
+Tree 0:
+ (* (% (0- mean75x75) (* min105x105 min75x75))
+     (+ (% max65x65 max75x75) (% (+ min65x65 -0.5419158793110337)
+         (negexp min105x105))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36538.29374603792 Adjusted=2.7367797717995946E-5 Hits=51733
+Tree 0:
+ (* (0- (* mean105x105 min65x65)) (0- (0-
+     (- min95x95 mean85x85))))
+
+Generation: 2
+Best Individual:
+Adjusted Fitness: 	2.7475527370198513E-5	2.5690022E-5
+Standardized Fitness	36395.02568956168	39167.574
+Adjusted Fitness: 	2.742235710649543E-5	2.5434261E-5
+Standardized Fitness	36465.59534468442	39573.9
+Adjusted Fitness: 	2.7457332025147452E-5	2.568873E-5
+Standardized Fitness	36419.14450217254	39169.55
+Adjusted Fitness: 	2.7367797717995946E-5	2.5744519E-5
+Standardized Fitness	36538.29374603792	39078.625
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=36322.794309419565 Adjusted=2.753016360244827E-5 Hits=52880
+Tree 0:
+ (* (% (* min55x55 (% min105x105 mean55x55))
+     (- (- min85x85 max65x65) (% mean55x55 max85x85)))
+     (% (* min95x95 (* max75x75 mean105x105))
+         (- (- min85x85 mean75x75) (0- mean95x95))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=36399.06324640185 Adjusted=2.7472479738035898E-5 Hits=52427
+Tree 0:
+ (0- (0- (0- (* (- (* min105x105 min65x65)
+     (% max95x95 std-deviation105x105)) (0- (0-
+     (- min95x95 mean85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36406.79084718803 Adjusted=2.7466648668611417E-5 Hits=52383
+Tree 0:
+ (% (0- min95x95) (* min105x105 min75x75))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36412.22718123683 Adjusted=2.7462548019234192E-5 Hits=52372
+Tree 0:
+ (* (* min105x105 (- mean85x85 min55x55))
+     (0- (0- min95x95)))
+
+Generation: 3
+Best Individual:
+Adjusted Fitness: 	2.753016360244827E-5	2.5415777E-5
+Standardized Fitness	36322.794309419565	39603.69
+Adjusted Fitness: 	2.7472479738035898E-5	2.561747E-5
+Standardized Fitness	36399.06324640185	39287.28
+Adjusted Fitness: 	2.7466648668611417E-5	2.5524954E-5
+Standardized Fitness	36406.79084718803	39438.53
+Adjusted Fitness: 	2.7462548019234192E-5	2.5395184E-5
+Standardized Fitness	36412.22718123683	39639.902
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=36395.02568956168 Adjusted=2.7475527370198513E-5 Hits=52416
+Tree 0:
+ (* (% (* (0- (0- min105x105)) (exp max85x85))
+     (- (negexp max85x85) (% mean55x55 max85x85)))
+     (% (* min95x95 (* max75x75 mean105x105))
+         (- (- min85x85 mean75x75) (0- mean95x95))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34458.246699559444 Adjusted=2.9019787017363465E-5 Hits=68046
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (* mean105x105
+         mean65x65) (negexp 1.6415652884367122)) (-
+         (exp min95x95) (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36406.79084718803 Adjusted=2.7466648668611417E-5 Hits=52383
+Tree 0:
+ (* (% (0- min95x95) (* min105x105 min75x75))
+     min95x95)
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36406.79084718803 Adjusted=2.7466648668611417E-5 Hits=52383
+Tree 0:
+ (* min75x75 (* (- mean85x85 (+ mean85x85
+     min105x105)) (0- (0- min95x95))))
+
+Generation: 4
+Best Individual:
+Adjusted Fitness: 	2.7475527370198513E-5	2.548088E-5
+Standardized Fitness	36395.02568956168	39504.52
+Adjusted Fitness: 	2.9019787017363465E-5	2.552637E-5
+Standardized Fitness	34458.246699559444	39442.926
+Adjusted Fitness: 	2.7466648668611417E-5	2.5418027E-5
+Standardized Fitness	36406.79084718803	39648.297
+Adjusted Fitness: 	2.7466648668611417E-5	2.532186E-5
+Standardized Fitness	36406.79084718803	39761.492
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34458.246699559444 Adjusted=2.9019787017363465E-5 Hits=68046
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (* mean105x105
+         mean65x65) (negexp 1.6415652884367122)) (-
+         (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34453.523532085 Adjusted=2.902376516885432E-5 Hits=68031
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (* mean105x105
+         mean65x65) (0- min95x95)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36321.47975686506 Adjusted=2.753115995091158E-5 Hits=52902
+Tree 0:
+ (* (% (0- min95x95) (* min105x105 min75x75))
+     (+ (0- min105x105) (% (+ min65x65 -0.5419158793110337)
+         (negexp min105x105))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=36368.74262859537 Adjusted=2.7495382912436652E-5 Hits=52679
+Tree 0:
+ (* (- (0- min95x95) (+ mean85x85 min95x95))
+     (0- (* min75x75 (* (* min105x105 (- mean85x85
+         min55x55)) (0- (0- (- min95x95 mean85x85)))))))
+
+Generation: 5
+Best Individual:
+Adjusted Fitness: 	2.9019787017363465E-5	2.600428E-5
+Standardized Fitness	34458.246699559444	38684.93
+Adjusted Fitness: 	2.902376516885432E-5	2.6229745E-5
+Standardized Fitness	34453.523532085	38337.72
+Adjusted Fitness: 	2.753115995091158E-5	2.5703644E-5
+Standardized Fitness	36321.47975686506	39166.7
+Adjusted Fitness: 	2.7495382912436652E-5	2.5637324E-5
+Standardized Fitness	36368.74262859537	39264.844
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34458.246699559444 Adjusted=2.9019787017363465E-5 Hits=68046
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (* mean105x105
+         mean65x65) (negexp 1.6415652884367122)) (-
+         (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34421.67918599688 Adjusted=2.9050614991258417E-5 Hits=68281
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (% max95x95 std-deviation105x105) (negexp
+         1.6415652884367122)) (- (exp min95x95) (negexp
+         min85x85))))) (* -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36317.6331729342 Adjusted=2.7534075834804044E-5 Hits=52907
+Tree 0:
+ (* (% (0- (* min105x105 min95x95)) (* min105x105
+     min75x75)) (+ min95x95 (% (+ min65x65 -0.5419158793110337)
+     (negexp min105x105))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=35385.62614020193 Adjusted=2.825926371273703E-5 Hits=61423
+Tree 0:
+ (- (% (- (negexp std-deviation65x65) (* mean75x75
+     mean85x85)) (- (* min105x105 (% max95x95
+     std-deviation105x105)) (* mean105x105 mean65x65)))
+     (% (+ (0- min95x95) (- mean85x85 min55x55))
+         (- (% min95x95 mean65x65) (* std-deviation65x65
+             min65x65))))
+
+Generation: 6
+Best Individual:
+Adjusted Fitness: 	2.9019787017363465E-5	2.5747519E-5
+Standardized Fitness	34458.246699559444	39111.617
+Adjusted Fitness: 	2.9050614991258417E-5	2.598982E-5
+Standardized Fitness	34421.67918599688	38730.145
+Adjusted Fitness: 	2.7534075834804044E-5	2.5677797E-5
+Standardized Fitness	36317.6331729342	39214.49
+Adjusted Fitness: 	2.825926371273703E-5	2.5953004E-5
+Standardized Fitness	35385.62614020193	38773.195
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34398.33152217542 Adjusted=2.9070332350945638E-5 Hits=68855
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34421.67918599688 Adjusted=2.9050614991258417E-5 Hits=68281
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (% max95x95 std-deviation105x105) (negexp
+         1.6415652884367122)) (- (exp min95x95) (negexp
+         min85x85))))) (* -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36321.47975686506 Adjusted=2.753115995091158E-5 Hits=52902
+Tree 0:
+ (* (% (% (* (% (- mean95x95 min95x95) (*
+     min105x105 mean95x95)) (+ (% max65x65 max75x75)
+     (negexp min105x105))) (* min105x105 min75x75))
+     (* min105x105 min75x75)) (% (+ min65x65 -0.5419158793110337)
+     (negexp min105x105)))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=35385.62614020193 Adjusted=2.825926371273703E-5 Hits=61423
+Tree 0:
+ (* min105x105 (% (- (negexp std-deviation65x65)
+     (* mean75x75 mean85x85)) (- (* min105x105
+     (% max95x95 std-deviation105x105)) (* mean105x105
+     mean65x65))))
+
+Generation: 7
+Best Individual:
+Adjusted Fitness: 	2.9070332350945638E-5	2.5992407E-5
+Standardized Fitness	34398.33152217542	38747.434
+Adjusted Fitness: 	2.9050614991258417E-5	2.6065461E-5
+Standardized Fitness	34421.67918599688	38637.04
+Adjusted Fitness: 	2.753115995091158E-5	2.5826617E-5
+Standardized Fitness	36321.47975686506	39045.6
+Adjusted Fitness: 	2.825926371273703E-5	2.5588457E-5
+Standardized Fitness	35385.62614020193	39358.48
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34381.30205797989 Adjusted=2.9084730810452147E-5 Hits=68877
+Tree 0:
+ (0- (* max85x85 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34403.225522818226 Adjusted=2.906619709653865E-5 Hits=68898
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean85x85)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36320.72484968017 Adjusted=2.7531732155853426E-5 Hits=52903
+Tree 0:
+ (% (* (% (- mean95x95 min95x95) (* min105x105
+     min75x75)) (+ (% max65x65 max75x75) (negexp
+     min105x105))) (+ (0- min105x105) (+ (* min105x105
+     min75x75) (% (+ min65x65 -0.5419158793110337)
+     mean95x95))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=35291.918852649986 Adjusted=2.8334295731533537E-5 Hits=62072
+Tree 0:
+ (* (0- min105x105) (0- (* min75x75 (* (-
+     mean85x85 (+ mean85x85 min105x105)) (- (*
+     min105x105 (% max95x95 std-deviation105x105))
+     (* mean105x105 mean65x65))))))
+
+Generation: 8
+Best Individual:
+Adjusted Fitness: 	2.9084730810452147E-5	2.6168627E-5
+Standardized Fitness	34381.30205797989	38503.977
+Adjusted Fitness: 	2.906619709653865E-5	2.6269052E-5
+Standardized Fitness	34403.225522818226	38382.914
+Adjusted Fitness: 	2.7531732155853426E-5	2.5696874E-5
+Standardized Fitness	36320.72484968017	39189.258
+Adjusted Fitness: 	2.8334295731533537E-5	2.5551857E-5
+Standardized Fitness	35291.918852649986	39418.625
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34381.30205797989 Adjusted=2.9084730810452147E-5 Hits=68877
+Tree 0:
+ (0- (* (- (exp min95x95) (negexp min85x85))
+     (- min105x105 (- (* mean85x85 max95x95) (+
+         (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34398.33152217542 Adjusted=2.9070332350945638E-5 Hits=68855
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=36090.71350921543 Adjusted=2.770719100783803E-5 Hits=59143
+Tree 0:
+ (* (- (% (- (negexp std-deviation65x65) (*
+     mean75x75 mean85x85)) (- (0- min95x95) (*
+     mean105x105 (* min105x105 (0- min85x85)))))
+     (% (0- (- (+ (* min95x95 max105x105) (- min95x95
+         mean85x85)) (* min105x105 (0- min95x95))))
+         (- (% min95x95 min55x55) (* std-deviation65x65
+             min65x65)))) (0- (0- min95x95)))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34398.33152217542 Adjusted=2.9070332350945638E-5 Hits=68855
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+
+Generation: 9
+Best Individual:
+Adjusted Fitness: 	2.9084730810452147E-5	2.6854024E-5
+Standardized Fitness	34381.30205797989	37531.98
+Adjusted Fitness: 	2.9070332350945638E-5	2.702069E-5
+Standardized Fitness	34398.33152217542	37301.93
+Adjusted Fitness: 	2.770719100783803E-5	2.5993988E-5
+Standardized Fitness	36090.71350921543	38726.33
+Adjusted Fitness: 	2.9070332350945638E-5	2.6105863E-5
+Standardized Fitness	34398.33152217542	38584.53
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34381.30205797989 Adjusted=2.9084730810452147E-5 Hits=68877
+Tree 0:
+ (0- (* (- (exp min95x95) (negexp min85x85))
+     (- min105x105 (- (* mean85x85 max95x95) (+
+         (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34398.33152217542 Adjusted=2.9070332350945638E-5 Hits=68855
+Tree 0:
+ (0- (* (* mean105x105 min65x65) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=35992.22495366987 Adjusted=2.7783006420991456E-5 Hits=59667
+Tree 0:
+ (* (- (% (- (negexp std-deviation65x65) (*
+     mean75x75 mean85x85)) (- (0- min95x95) (*
+     mean105x105 (* min105x105 (0- min85x85)))))
+     (% (0- (- (+ (* min95x95 max105x105) (- min95x95
+         mean85x85)) (* min105x105 (0- min95x95))))
+         (- (% min95x95 min55x55) (* std-deviation65x65
+             min65x65)))) (0- (* (% (- mean95x95 min95x95)
+     (* min105x105 min75x75)) (+ (* min105x105
+     (% (+ min65x65 -0.5419158793110337) (negexp
+         min105x105))) (negexp min105x105)))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+
+Generation: 10
+Best Individual:
+Adjusted Fitness: 	2.9084730810452147E-5	2.7190175E-5
+Standardized Fitness	34381.30205797989	37061.92
+Adjusted Fitness: 	2.9070332350945638E-5	2.701416E-5
+Standardized Fitness	34398.33152217542	37339.703
+Adjusted Fitness: 	2.7783006420991456E-5	2.5700578E-5
+Standardized Fitness	35992.22495366987	39185.523
+Adjusted Fitness: 	2.910478398325405E-5	2.6345368E-5
+Standardized Fitness	34357.61267946079	38276.89
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34373.35912586599 Adjusted=2.909145146061853E-5 Hits=69074
+Tree 0:
+ (0- (* (* min55x55 (% min105x105 mean55x55))
+     (- min105x105 (- (* mean85x85 max95x95) (+
+         (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34386.211585285164 Adjusted=2.9080578328366583E-5 Hits=68920
+Tree 0:
+ (0- (* (negexp 1.6415652884367122) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean85x85)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=35992.22495366987 Adjusted=2.7783006420991456E-5 Hits=59667
+Tree 0:
+ (* (- (% (- (negexp std-deviation65x65) (*
+     mean75x75 mean85x85)) (- (0- min95x95) (*
+     mean105x105 (* min105x105 (0- min85x85)))))
+     (% (0- (- (+ (* min95x95 max105x105) (- min95x95
+         mean85x85)) (* min105x105 (0- min95x95))))
+         (- (% min95x95 min55x55) (* std-deviation65x65
+             min65x65)))) (0- (* (% (- mean95x95 min95x95)
+     (* min105x105 min75x75)) (+ (* min105x105
+     (% (+ min65x65 -0.5419158793110337) (negexp
+         min105x105))) (negexp min105x105)))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+
+Generation: 11
+Best Individual:
+Adjusted Fitness: 	2.909145146061853E-5	2.708527E-5
+Standardized Fitness	34373.35912586599	37267.82
+Adjusted Fitness: 	2.9080578328366583E-5	2.6942444E-5
+Standardized Fitness	34386.211585285164	37427.93
+Adjusted Fitness: 	2.7783006420991456E-5	2.621363E-5
+Standardized Fitness	35992.22495366987	38381.29
+Adjusted Fitness: 	2.910478398325405E-5	2.6493568E-5
+Standardized Fitness	34357.61267946079	38120.42
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34373.35912586599 Adjusted=2.909145146061853E-5 Hits=69074
+Tree 0:
+ (0- (* (* min55x55 (% min105x105 mean55x55))
+     (- min105x105 (- (* mean85x85 max95x95) (+
+         (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85))))) (*
+     -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=35992.22495366987 Adjusted=2.7783006420991456E-5 Hits=59667
+Tree 0:
+ (* (- (% (- (negexp std-deviation65x65) (*
+     mean75x75 mean85x85)) (- (0- min95x95) (*
+     mean105x105 (* min105x105 (0- min85x85)))))
+     (% (0- (- (+ (* min95x95 max105x105) (- min95x95
+         mean85x85)) (* min105x105 (0- min95x95))))
+         (- (% min95x95 min55x55) (* std-deviation65x65
+             min65x65)))) (0- (* (% (- mean95x95 min95x95)
+     (* min105x105 min75x75)) (+ (* min105x105
+     (% (+ min65x65 -0.5419158793110337) (negexp
+         min105x105))) (% (+ min65x65 -0.5419158793110337)
+     mean95x95)))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+
+Generation: 12
+Best Individual:
+Adjusted Fitness: 	2.909145146061853E-5	2.7086771E-5
+Standardized Fitness	34373.35912586599	37228.27
+Adjusted Fitness: 	2.910478398325405E-5	2.7275357E-5
+Standardized Fitness	34357.61267946079	36936.59
+Adjusted Fitness: 	2.7783006420991456E-5	2.6004229E-5
+Standardized Fitness	35992.22495366987	38717.2
+Adjusted Fitness: 	2.910478398325405E-5	2.7081016E-5
+Standardized Fitness	34357.61267946079	37236.062
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (* (% (* (* mean85x85 max95x95) (% min105x105
+     mean55x55)) (- (- min85x85 max65x65) (0-
+     mean95x95))) (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34381.30205797989 Adjusted=2.9084730810452147E-5 Hits=68877
+Tree 0:
+ (0- (* (exp min95x95) (- min105x105 (- (*
+     mean85x85 max95x95) (+ (% (0- mean95x95)
+     (negexp 1.6415652884367122)) (- (exp min95x95)
+     (negexp min85x85)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+
+Generation: 13
+Best Individual:
+Adjusted Fitness: 	2.910478398325405E-5	2.7543138E-5
+Standardized Fitness	34357.61267946079	36557.0
+Adjusted Fitness: 	2.910478398325405E-5	2.7165468E-5
+Standardized Fitness	34357.61267946079	37096.023
+Adjusted Fitness: 	2.9084730810452147E-5	2.639002E-5
+Standardized Fitness	34381.30205797989	38130.69
+Adjusted Fitness: 	2.910478398325405E-5	2.719569E-5
+Standardized Fitness	34357.61267946079	37058.938
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85))))) (*
+     -1.6429797243807034 min105x105))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85))))) (*
+     -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34397.27110649166 Adjusted=2.907122851913565E-5 Hits=68946
+Tree 0:
+ (0- (* min85x85 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean85x85) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34137.04782167245 Adjusted=2.929282908102181E-5 Hits=70602
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 14
+Best Individual:
+Adjusted Fitness: 	2.910478398325405E-5	2.731892E-5
+Standardized Fitness	34357.61267946079	36860.062
+Adjusted Fitness: 	2.910478398325405E-5	2.7336644E-5
+Standardized Fitness	34357.61267946079	36840.586
+Adjusted Fitness: 	2.907122851913565E-5	2.6395808E-5
+Standardized Fitness	34397.27110649166	38143.98
+Adjusted Fitness: 	2.929282908102181E-5	2.731832E-5
+Standardized Fitness	34137.04782167245	36877.133
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34357.61267946079 Adjusted=2.910478398325405E-5 Hits=69096
+Tree 0:
+ (* (% (* (* mean85x85 max95x95) (% min105x105
+     mean55x55)) (- (- min85x85 max65x65) (0-
+     mean95x95))) (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34346.30305155854 Adjusted=2.911436739294802E-5 Hits=69696
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+             (- (exp min95x95) (negexp min85x85))))))
+     (* -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34397.27110649166 Adjusted=2.907122851913565E-5 Hits=68946
+Tree 0:
+ (0- (* min85x85 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean85x85) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min85x85)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34137.04782167245 Adjusted=2.929282908102181E-5 Hits=70602
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 15
+Best Individual:
+Adjusted Fitness: 	2.910478398325405E-5	2.7011669E-5
+Standardized Fitness	34357.61267946079	37331.273
+Adjusted Fitness: 	2.911436739294802E-5	2.7124786E-5
+Standardized Fitness	34346.30305155854	37161.562
+Adjusted Fitness: 	2.907122851913565E-5	2.6518836E-5
+Standardized Fitness	34397.27110649166	38007.156
+Adjusted Fitness: 	2.929282908102181E-5	2.7149264E-5
+Standardized Fitness	34137.04782167245	37138.94
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34137.04782167245 Adjusted=2.929282908102181E-5 Hits=70602
+Tree 0:
+ (0- (* (% min105x105 mean55x55) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34346.30305155854 Adjusted=2.911436739294802E-5 Hits=69696
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+             (- (exp min95x95) (negexp min85x85))))))
+     (* -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34381.30205797989 Adjusted=2.9084730810452147E-5 Hits=68877
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (- (exp min95x95) (negexp min85x85))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 16
+Best Individual:
+Adjusted Fitness: 	2.929282908102181E-5	2.7171402E-5
+Standardized Fitness	34137.04782167245	37112.61
+Adjusted Fitness: 	2.911436739294802E-5	2.7255452E-5
+Standardized Fitness	34346.30305155854	36982.613
+Adjusted Fitness: 	2.9084730810452147E-5	2.6730546E-5
+Standardized Fitness	34381.30205797989	37734.844
+Adjusted Fitness: 	2.929428872549804E-5	2.7411723E-5
+Standardized Fitness	34135.346827550384	36721.145
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34137.04782167245 Adjusted=2.929282908102181E-5 Hits=70602
+Tree 0:
+ (0- (* (% min105x105 mean55x55) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min95x95)
+         (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34346.30305155854 Adjusted=2.911436739294802E-5 Hits=69696
+Tree 0:
+ (% (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+         (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+             (- (exp min95x95) (negexp min85x85))))))
+     (* -1.6429797243807034 min105x105))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34137.04782167245 Adjusted=2.929282908102181E-5 Hits=70602
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 17
+Best Individual:
+Adjusted Fitness: 	2.929282908102181E-5	2.6969847E-5
+Standardized Fitness	34137.04782167245	37433.76
+Adjusted Fitness: 	2.911436739294802E-5	2.7218333E-5
+Standardized Fitness	34346.30305155854	37021.55
+Adjusted Fitness: 	2.929282908102181E-5	2.701505E-5
+Standardized Fitness	34137.04782167245	37355.945
+Adjusted Fitness: 	2.929428872549804E-5	2.7339767E-5
+Standardized Fitness	34135.346827550384	36878.543
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34130.947394487586 Adjusted=2.9298064609155675E-5 Hits=70612
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (- (exp min95x95) (negexp min95x95))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34130.626884664314 Adjusted=2.9298339729868257E-5 Hits=70154
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 18
+Best Individual:
+Adjusted Fitness: 	2.929428872549804E-5	2.7096785E-5
+Standardized Fitness	34135.346827550384	37226.26
+Adjusted Fitness: 	2.9298064609155675E-5	2.7271903E-5
+Standardized Fitness	34130.947394487586	36937.832
+Adjusted Fitness: 	2.929428872549804E-5	2.7064903E-5
+Standardized Fitness	34135.346827550384	37260.008
+Adjusted Fitness: 	2.9298339729868257E-5	2.7571341E-5
+Standardized Fitness	34130.626884664314	36520.15
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34020.501248663575 Adjusted=2.9393176764628567E-5 Hits=71483
+Tree 0:
+ (0- (* (% min105x105 mean55x55) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min105x105)
+         (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34130.947394487586 Adjusted=2.9298064609155675E-5 Hits=70612
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp 1.6415652884367122))
+     (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (- (exp min95x95) (negexp min95x95))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 19
+Best Individual:
+Adjusted Fitness: 	2.9393176764628567E-5	2.7321972E-5
+Standardized Fitness	34020.501248663575	36915.496
+Adjusted Fitness: 	2.9298064609155675E-5	2.7085362E-5
+Standardized Fitness	34130.947394487586	37205.074
+Adjusted Fitness: 	2.929428872549804E-5	2.7306738E-5
+Standardized Fitness	34135.346827550384	36860.133
+Adjusted Fitness: 	2.9309151314790437E-5	2.7288435E-5
+Standardized Fitness	34118.036380809994	36964.797
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34020.501248663575 Adjusted=2.9393176764628567E-5 Hits=71483
+Tree 0:
+ (0- (* (% min105x105 mean55x55) (- min105x105
+     (- (* mean85x85 max95x95) (+ (% (0- mean95x95)
+         (negexp 1.6415652884367122)) (- (exp min105x105)
+         (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34129.2072511904 Adjusted=2.9299558383581803E-5 Hits=70189
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34135.346827550384 Adjusted=2.929428872549804E-5 Hits=70179
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (- (exp min95x95) (negexp min95x95))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 20
+Best Individual:
+Adjusted Fitness: 	2.9393176764628567E-5	2.7244014E-5
+Standardized Fitness	34020.501248663575	37021.543
+Adjusted Fitness: 	2.9299558383581803E-5	2.7056185E-5
+Standardized Fitness	34129.2072511904	37262.44
+Adjusted Fitness: 	2.929428872549804E-5	2.7223356E-5
+Standardized Fitness	34135.346827550384	37030.016
+Adjusted Fitness: 	2.9309151314790437E-5	2.7301223E-5
+Standardized Fitness	34118.036380809994	36925.562
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) 1.6415652884367122)
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34129.2072511904 Adjusted=2.9299558383581803E-5 Hits=70189
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 21
+Best Individual:
+Adjusted Fitness: 	2.9324250594771566E-5	2.7312137E-5
+Standardized Fitness	34100.468229107864	36924.246
+Adjusted Fitness: 	2.9299558383581803E-5	2.7280274E-5
+Standardized Fitness	34129.2072511904	36952.656
+Adjusted Fitness: 	2.9309151314790437E-5	2.7157123E-5
+Standardized Fitness	34118.036380809994	37134.74
+Adjusted Fitness: 	2.9309151314790437E-5	2.7292399E-5
+Standardized Fitness	34118.036380809994	36951.992
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min95x95)
+     (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34129.2072511904 Adjusted=2.9299558383581803E-5 Hits=70189
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 22
+Best Individual:
+Adjusted Fitness: 	2.9324250594771566E-5	2.717696E-5
+Standardized Fitness	34100.468229107864	37097.11
+Adjusted Fitness: 	2.9299558383581803E-5	2.7302163E-5
+Standardized Fitness	34129.2072511904	36920.47
+Adjusted Fitness: 	2.9309151314790437E-5	2.7099848E-5
+Standardized Fitness	34118.036380809994	37211.45
+Adjusted Fitness: 	2.9324250594771566E-5	2.7342601E-5
+Standardized Fitness	34100.468229107864	36864.81
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34129.2072511904 Adjusted=2.9299558383581803E-5 Hits=70189
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) max95x95)
+     (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 23
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7616197E-5
+Standardized Fitness	34087.39315946107	36442.73
+Adjusted Fitness: 	2.9299558383581803E-5	2.7300399E-5
+Standardized Fitness	34129.2072511904	36934.0
+Adjusted Fitness: 	2.9309151314790437E-5	2.7195774E-5
+Standardized Fitness	34118.036380809994	37094.367
+Adjusted Fitness: 	2.9324250594771566E-5	2.7536607E-5
+Standardized Fitness	34100.468229107864	36566.785
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=34129.2072511904 Adjusted=2.9299558383581803E-5 Hits=70189
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min95x95) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34118.036380809994 Adjusted=2.9309151314790437E-5 Hits=70518
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 24
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7345879E-5
+Standardized Fitness	34087.39315946107	36882.71
+Adjusted Fitness: 	2.9299558383581803E-5	2.7318703E-5
+Standardized Fitness	34129.2072511904	36879.637
+Adjusted Fitness: 	2.9309151314790437E-5	2.7278445E-5
+Standardized Fitness	34118.036380809994	36976.227
+Adjusted Fitness: 	2.9324250594771566E-5	2.7221362E-5
+Standardized Fitness	34100.468229107864	37062.06
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 25
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7544134E-5
+Standardized Fitness	34087.39315946107	36588.37
+Adjusted Fitness: 	2.9493715212964635E-5	2.7422186E-5
+Standardized Fitness	33904.52844154497	36748.504
+Adjusted Fitness: 	2.9324250594771566E-5	2.7361237E-5
+Standardized Fitness	34100.468229107864	36848.53
+Adjusted Fitness: 	2.9335498312347257E-5	2.7522083E-5
+Standardized Fitness	34087.39315946107	36606.934
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34100.468229107864 Adjusted=2.9324250594771566E-5 Hits=70537
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min95x95)
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 26
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7362348E-5
+Standardized Fitness	34087.39315946107	36864.305
+Adjusted Fitness: 	2.9493715212964635E-5	2.7540094E-5
+Standardized Fitness	33904.52844154497	36587.727
+Adjusted Fitness: 	2.9324250594771566E-5	2.7277882E-5
+Standardized Fitness	34100.468229107864	36947.402
+Adjusted Fitness: 	2.9335498312347257E-5	2.7397802E-5
+Standardized Fitness	34087.39315946107	36763.883
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 27
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7434562E-5
+Standardized Fitness	34087.39315946107	36725.63
+Adjusted Fitness: 	2.9493715212964635E-5	2.7384429E-5
+Standardized Fitness	33904.52844154497	36835.19
+Adjusted Fitness: 	2.9335498312347257E-5	2.720638E-5
+Standardized Fitness	34087.39315946107	37046.266
+Adjusted Fitness: 	2.9335498312347257E-5	2.7393035E-5
+Standardized Fitness	34087.39315946107	36815.246
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+
+Generation: 28
+Best Individual:
+Adjusted Fitness: 	2.9335498312347257E-5	2.7660166E-5
+Standardized Fitness	34087.39315946107	36391.746
+Adjusted Fitness: 	2.9493715212964635E-5	2.7302389E-5
+Standardized Fitness	33904.52844154497	36913.945
+Adjusted Fitness: 	2.9335498312347257E-5	2.7183696E-5
+Standardized Fitness	34087.39315946107	37109.35
+Adjusted Fitness: 	2.9335498312347257E-5	2.7277627E-5
+Standardized Fitness	34087.39315946107	36999.45
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 29
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7509439E-5
+Standardized Fitness	33904.52844154497	36629.875
+Adjusted Fitness: 	2.9493715212964635E-5	2.7384953E-5
+Standardized Fitness	33904.52844154497	36828.008
+Adjusted Fitness: 	2.9335498312347257E-5	2.7486636E-5
+Standardized Fitness	34087.39315946107	36653.723
+Adjusted Fitness: 	2.9493715212964635E-5	2.7499049E-5
+Standardized Fitness	33904.52844154497	36644.785
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 30
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7307582E-5
+Standardized Fitness	33904.52844154497	36933.68
+Adjusted Fitness: 	2.9493715212964635E-5	2.760279E-5
+Standardized Fitness	33904.52844154497	36486.215
+Adjusted Fitness: 	2.9335498312347257E-5	2.7341546E-5
+Standardized Fitness	34087.39315946107	36845.14
+Adjusted Fitness: 	2.9493715212964635E-5	2.7419044E-5
+Standardized Fitness	33904.52844154497	36744.02
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 31
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7380396E-5
+Standardized Fitness	33904.52844154497	36799.895
+Adjusted Fitness: 	2.9493715212964635E-5	2.753213E-5
+Standardized Fitness	33904.52844154497	36625.03
+Adjusted Fitness: 	2.9335498312347257E-5	2.730192E-5
+Standardized Fitness	34087.39315946107	36934.625
+Adjusted Fitness: 	2.9493715212964635E-5	2.7280756E-5
+Standardized Fitness	33904.52844154497	36982.66
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=34087.39315946107 Adjusted=2.9335498312347257E-5 Hits=70860
+Tree 0:
+ (0- (* min105x105 (- min95x95 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (negexp min95x95))
+     (- (exp min95x95) (negexp min95x95)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 32
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7379447E-5
+Standardized Fitness	33904.52844154497	36825.285
+Adjusted Fitness: 	2.9493715212964635E-5	2.7449154E-5
+Standardized Fitness	33904.52844154497	36715.137
+Adjusted Fitness: 	2.9335498312347257E-5	2.7136883E-5
+Standardized Fitness	34087.39315946107	37200.336
+Adjusted Fitness: 	2.9493715212964635E-5	2.7238157E-5
+Standardized Fitness	33904.52844154497	37028.34
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 33
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7173757E-5
+Standardized Fitness	33904.52844154497	37159.387
+Adjusted Fitness: 	2.9493715212964635E-5	2.740675E-5
+Standardized Fitness	33904.52844154497	36788.45
+Adjusted Fitness: 	2.9493715212964635E-5	2.7391798E-5
+Standardized Fitness	33904.52844154497	36820.414
+Adjusted Fitness: 	2.9493715212964635E-5	2.7487296E-5
+Standardized Fitness	33904.52844154497	36684.05
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+
+Generation: 34
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.719755E-5
+Standardized Fitness	33904.52844154497	37134.3
+Adjusted Fitness: 	2.9493715212964635E-5	2.7460403E-5
+Standardized Fitness	33904.52844154497	36719.703
+Adjusted Fitness: 	2.9493715212964635E-5	2.7353257E-5
+Standardized Fitness	33904.52844154497	36902.17
+Adjusted Fitness: 	2.9493715212964635E-5	2.7730553E-5
+Standardized Fitness	33904.52844154497	36300.535
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 35
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7595537E-5
+Standardized Fitness	33904.52844154497	36497.367
+Adjusted Fitness: 	2.9493715212964635E-5	2.7452465E-5
+Standardized Fitness	33904.52844154497	36729.504
+Adjusted Fitness: 	2.9493715212964635E-5	2.7603173E-5
+Standardized Fitness	33904.52844154497	36491.836
+Adjusted Fitness: 	2.9493715212964635E-5	2.7420247E-5
+Standardized Fitness	33904.52844154497	36760.715
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (exp min105x105)) (-
+         (exp min105x105) (negexp min105x105))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 36
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7444394E-5
+Standardized Fitness	33904.52844154497	36781.848
+Adjusted Fitness: 	2.9493715212964635E-5	2.7409249E-5
+Standardized Fitness	33904.52844154497	36815.254
+Adjusted Fitness: 	2.9493715212964635E-5	2.7358856E-5
+Standardized Fitness	33904.52844154497	36838.816
+Adjusted Fitness: 	2.9493715212964635E-5	2.7416812E-5
+Standardized Fitness	33904.52844154497	36785.47
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) max95x95)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+
+Generation: 37
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.761751E-5
+Standardized Fitness	33904.52844154497	36469.832
+Adjusted Fitness: 	2.9493715212964635E-5	2.7242057E-5
+Standardized Fitness	33904.52844154497	37067.977
+Adjusted Fitness: 	2.9493715212964635E-5	2.743845E-5
+Standardized Fitness	33904.52844154497	36804.727
+Adjusted Fitness: 	2.9493715212964635E-5	2.7426278E-5
+Standardized Fitness	33904.52844154497	36760.727
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 38
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7460252E-5
+Standardized Fitness	33904.52844154497	36710.69
+Adjusted Fitness: 	2.9493715212964635E-5	2.7525255E-5
+Standardized Fitness	33904.52844154497	36618.465
+Adjusted Fitness: 	2.9493715212964635E-5	2.7589529E-5
+Standardized Fitness	33904.52844154497	36511.457
+Adjusted Fitness: 	2.9493715212964635E-5	2.7319047E-5
+Standardized Fitness	33904.52844154497	36919.76
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min105x105))
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 39
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7616219E-5
+Standardized Fitness	33904.52844154497	36453.824
+Adjusted Fitness: 	2.9493715212964635E-5	2.7560469E-5
+Standardized Fitness	33904.52844154497	36593.156
+Adjusted Fitness: 	2.9493715212964635E-5	2.7507536E-5
+Standardized Fitness	33904.52844154497	36631.21
+Adjusted Fitness: 	2.9493715212964635E-5	2.7273365E-5
+Standardized Fitness	33904.52844154497	37005.113
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* max95x95 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 40
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7525766E-5
+Standardized Fitness	33904.52844154497	36614.895
+Adjusted Fitness: 	2.9493715212964635E-5	2.7316E-5
+Standardized Fitness	33904.52844154497	36938.18
+Adjusted Fitness: 	2.9493715212964635E-5	2.749258E-5
+Standardized Fitness	33904.52844154497	36675.98
+Adjusted Fitness: 	2.9493715212964635E-5	2.7464208E-5
+Standardized Fitness	33904.52844154497	36731.977
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) max95x95) (- (exp min105x105)
+         (negexp min105x105))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (exp max55x55)) (- (exp
+         min105x105) (negexp min105x105))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 41
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7644845E-5
+Standardized Fitness	33904.52844154497	36436.61
+Adjusted Fitness: 	2.9493715212964635E-5	2.7425698E-5
+Standardized Fitness	33904.52844154497	36801.793
+Adjusted Fitness: 	2.9493715212964635E-5	2.7541297E-5
+Standardized Fitness	33904.52844154497	36599.215
+Adjusted Fitness: 	2.9493715212964635E-5	2.7634575E-5
+Standardized Fitness	33904.52844154497	36440.715
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (- (exp min105x105)
+         (negexp min105x105))) (- (exp min105x105)
+         (negexp min105x105))))))
+
+Generation: 42
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7258124E-5
+Standardized Fitness	33904.52844154497	37036.656
+Adjusted Fitness: 	2.9493715212964635E-5	2.7417098E-5
+Standardized Fitness	33904.52844154497	36781.312
+Adjusted Fitness: 	2.9493715212964635E-5	2.7600317E-5
+Standardized Fitness	33904.52844154497	36505.914
+Adjusted Fitness: 	2.9493715212964635E-5	2.729846E-5
+Standardized Fitness	33904.52844154497	36951.27
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (0- mean95x95) (- (exp min105x105) (negexp
+         min105x105))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 43
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7569966E-5
+Standardized Fitness	33904.52844154497	36569.617
+Adjusted Fitness: 	2.9493715212964635E-5	2.7453512E-5
+Standardized Fitness	33904.52844154497	36749.98
+Adjusted Fitness: 	2.9493715212964635E-5	2.7437822E-5
+Standardized Fitness	33904.52844154497	36719.164
+Adjusted Fitness: 	2.9493715212964635E-5	2.7319727E-5
+Standardized Fitness	33904.52844154497	36909.73
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min105x105))
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min105x105))
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% min105x105 std-deviation105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 44
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.731152E-5
+Standardized Fitness	33904.52844154497	36938.914
+Adjusted Fitness: 	2.9493715212964635E-5	2.7324046E-5
+Standardized Fitness	33904.52844154497	36915.957
+Adjusted Fitness: 	2.9493715212964635E-5	2.7338325E-5
+Standardized Fitness	33904.52844154497	36880.99
+Adjusted Fitness: 	2.9493715212964635E-5	2.7467295E-5
+Standardized Fitness	33904.52844154497	36699.406
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) max95x95)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 45
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.735014E-5
+Standardized Fitness	33904.52844154497	36901.613
+Adjusted Fitness: 	2.9493715212964635E-5	2.7416265E-5
+Standardized Fitness	33904.52844154497	36799.65
+Adjusted Fitness: 	2.9493715212964635E-5	2.7329666E-5
+Standardized Fitness	33904.52844154497	36908.65
+Adjusted Fitness: 	2.9493715212964635E-5	2.7262255E-5
+Standardized Fitness	33904.52844154497	37020.598
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (- (exp min105x105) (negexp min105x105))))))
+
+Generation: 46
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7399794E-5
+Standardized Fitness	33904.52844154497	36835.89
+Adjusted Fitness: 	2.9493715212964635E-5	2.7505408E-5
+Standardized Fitness	33904.52844154497	36644.293
+Adjusted Fitness: 	2.9493715212964635E-5	2.7307095E-5
+Standardized Fitness	33904.52844154497	36949.855
+Adjusted Fitness: 	2.9493715212964635E-5	2.7281309E-5
+Standardized Fitness	33904.52844154497	37036.535
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* (exp min105x105) (- min105x105 (-
+     (* mean85x85 max95x95) (+ (% (0- mean95x95)
+     (* mean85x85 max95x95)) (- (exp min105x105)
+     (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+
+Generation: 47
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7460734E-5
+Standardized Fitness	33904.52844154497	36738.715
+Adjusted Fitness: 	2.9493715212964635E-5	2.7302704E-5
+Standardized Fitness	33904.52844154497	36951.926
+Adjusted Fitness: 	2.9493715212964635E-5	2.7339836E-5
+Standardized Fitness	33904.52844154497	36893.457
+Adjusted Fitness: 	2.9493715212964635E-5	2.7433629E-5
+Standardized Fitness	33904.52844154497	36758.312
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* std-deviation85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* mean85x85 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (0- mean95x95) (- (exp min105x105)
+     (negexp min105x105)))))))
+
+Generation: 48
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7412152E-5
+Standardized Fitness	33904.52844154497	36787.332
+Adjusted Fitness: 	2.9493715212964635E-5	2.742194E-5
+Standardized Fitness	33904.52844154497	36765.797
+Adjusted Fitness: 	2.9493715212964635E-5	2.7478325E-5
+Standardized Fitness	33904.52844154497	36705.0
+Adjusted Fitness: 	2.9493715212964635E-5	2.7120159E-5
+Standardized Fitness	33904.52844154497	37226.266
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (- min105x105 (- (* mean85x85 max95x95)
+     (+ (% (0- mean95x95) (* mean85x85 max95x95))
+         (- (exp min105x105) (negexp min105x105))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (exp min105x105))
+     (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 49
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7391137E-5
+Standardized Fitness	33904.52844154497	36837.223
+Adjusted Fitness: 	2.9493715212964635E-5	2.751537E-5
+Standardized Fitness	33904.52844154497	36654.24
+Adjusted Fitness: 	2.9493715212964635E-5	2.7519616E-5
+Standardized Fitness	33904.52844154497	36630.227
+Adjusted Fitness: 	2.9493715212964635E-5	2.740607E-5
+Standardized Fitness	33904.52844154497	36836.176
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* (+ min105x105 (- (exp min105x105)
+     (negexp min105x105))) (- min105x105 (- (*
+     mean85x85 max95x95) (+ (% (0- mean95x95)
+     (* mean85x85 max95x95)) (- (exp min105x105)
+     (negexp min105x105)))))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+Generation: 50
+Best Individual:
+Adjusted Fitness: 	2.9493715212964635E-5	2.7411854E-5
+Standardized Fitness	33904.52844154497	36787.957
+Adjusted Fitness: 	2.9493715212964635E-5	2.7585842E-5
+Standardized Fitness	33904.52844154497	36529.41
+Adjusted Fitness: 	2.9493715212964635E-5	2.7438224E-5
+Standardized Fitness	33904.52844154497	36748.39
+Adjusted Fitness: 	2.9493715212964635E-5	2.7556533E-5
+Standardized Fitness	33904.52844154497	36594.812
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+
+Best Individual Subpop: 0
+
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* (+ min105x105 (- (exp min105x105)
+     (negexp min105x105))) (- min105x105 (- (*
+     mean85x85 max95x95) (+ (% (0- mean95x95)
+     (* mean85x85 max95x95)) (- (exp min105x105)
+     (negexp min105x105)))))))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 95
+False Positive: 1659
+False Negative: 15741
+True Negative: 45005
+Test Set Total Hits: 45100
+True Positive percent: 0.005998989643849457
+False Positive percent: 0.1047613033594342
+True Negative percent: 0.9644479684553403
+False Negative percent: 0.3373264186524944
+(positive + negative)/(total positive + total negative):     0.7216
+((positive/total positive)+(negative/total negative))/2: 0.4852234790495949
+Max(positive/total positive,negative/total negative):    0.9644479684553403
+Total elapsed time:
+seconds: 75 milliseconds: 75180
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+
+Best Individual Subpop: 1
+
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 95
+False Positive: 1659
+False Negative: 15741
+True Negative: 45005
+Test Set Total Hits: 45100
+True Positive percent: 0.005998989643849457
+False Positive percent: 0.1047613033594342
+True Negative percent: 0.9644479684553403
+False Negative percent: 0.3373264186524944
+(positive + negative)/(total positive + total negative):     0.7216
+((positive/total positive)+(negative/total negative))/2: 0.4852234790495949
+Max(positive/total positive,negative/total negative):    0.9644479684553403
+Total elapsed time:
+seconds: 75 milliseconds: 75221
+Subpopulation 2:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+
+Best Individual Subpop: 2
+
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) min105x105)
+     (- (exp min105x105) (negexp min105x105)))))))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 95
+False Positive: 1659
+False Negative: 15741
+True Negative: 45005
+Test Set Total Hits: 45100
+True Positive percent: 0.005998989643849457
+False Positive percent: 0.1047613033594342
+True Negative percent: 0.9644479684553403
+False Negative percent: 0.3373264186524944
+(positive + negative)/(total positive + total negative):     0.7216
+((positive/total positive)+(negative/total negative))/2: 0.4852234790495949
+Max(positive/total positive,negative/total negative):    0.9644479684553403
+Total elapsed time:
+seconds: 75 milliseconds: 75242
+Subpopulation 3:
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+
+Best Individual Subpop: 3
+
+Evaluated: true
+Fitness: Standardized=33904.52844154497 Adjusted=2.9493715212964635E-5 Hits=72037
+Tree 0:
+ (0- (* min105x105 (- min105x105 (- (* mean85x85
+     max95x95) (+ (% (0- mean95x95) (* mean85x85
+     max95x95)) (- (exp min105x105) (negexp min105x105)))))))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 95
+False Positive: 1659
+False Negative: 15741
+True Negative: 45005
+Test Set Total Hits: 45100
+True Positive percent: 0.005998989643849457
+False Positive percent: 0.1047613033594342
+True Negative percent: 0.9644479684553403
+False Negative percent: 0.3373264186524944
+(positive + negative)/(total positive + total negative):     0.7216
+((positive/total positive)+(negative/total negative))/2: 0.4852234790495949
+Max(positive/total positive,negative/total negative):    0.9644479684553403
+Total elapsed time:
+seconds: 75 milliseconds: 75263
