@@ -1,0 +1,69 @@
+ISLAND 4
+Fitness: Standardized=35336.9225974626 Adjusted=2.8298211283982036E-5 Hits=59009
+Tree 0:
+ (% (- (0- 1.408711662809048) (ADF0 (- 0.5717080745355569
+     -1.5795149139653661) (ADF0 (0- 1.4806841761121414)
+     (+ 0.6536611600702966 -0.6880181046657308))))
+     (0- (- (0- (ADF0 (ADF0 (+ -0.7649683756272285
+         -1.1224832560414275) (+ -1.7834710049860538
+         1.989162455216328)) (+ (* -0.012652261930296671
+         -1.1896717115985016) 0.36387582862518375)))
+         (- (ADF0 (negexp (exp 0.8963875014530607))
+             (ADF0 (- 0.5717080745355569 -1.5795149139653661)
+                 (0- -0.47306665141519444))) (0- (negexp -0.2588904059066932))))))
+Tree 1:
+ (0- (% (0- min95x95) (0- (% (% (% (- ARG0
+     min95x95) min105x105) min105x105) min105x105))))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 8733
+False Positive: 22500
+False Negative: 4397
+True Negative: 26870
+Test Set Total Hits: 35603
+True Positive percent: 0.6651180502665651
+False Positive percent: 1.7136329017517136
+True Negative percent: 0.5442576463439336
+False Negative percent: 0.08906218351225441
+(positive + negative)/(total positive + total negative):     0.569648
+((positive/total positive)+(negative/total negative))/2: 0.6046878483052494
+Max(positive/total positive,negative/total negative):    0.6651180502665651
+
+
+
+
+
+
+ISLAND NO ADF
+Fitness: Standardized=33862.5636188723 Adjusted=2.953026477823781E-5 Hits=78420
+Tree 0:
+ (- (* (% (+ (- (* min85x85 (- min95x95 min65x65))
+     (- max105x105 max75x75)) (- min85x85 min75x75))
+     (% (- (* min85x85 (- min95x95 min65x65))
+         (+ std-deviation75x75 (- min95x95 max105x105)))
+         (- min95x95 (- max105x105 max75x75)))) (+
+     (- (* min85x85 (- min95x95 min65x65)) (-
+         max105x105 max75x75)) (- min85x85 min75x75)))
+     (- max105x105 max75x75))
+
+
+Testing set size: 62500
+
+Best Individual's Generalization Score...
+
+True Positive: 6430
+False Positive: 19531
+False Negative: 10765
+True Negative: 25774
+Test Set Total Hits: 32204
+True Positive percent: 0.373945914510032
+False Positive percent: 1.135853445769119
+True Negative percent: 0.5688996799470257
+False Negative percent: 0.23761174263326343
+(positive + negative)/(total positive + total negative):     0.515264
+((positive/total positive)+(negative/total negative))/2: 0.47142279722852887
+Max(positive/total positive,negative/total negative):    0.5688996799470257
